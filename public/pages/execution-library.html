@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ffb4a4",
+                    "on-secondary-container": "#f2a595",
+                    "background": "#111317",
+                    "inverse-surface": "#e2e2e8",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#333539",
+                    "outline-variant": "#58413d",
+                    "surface": "#111317",
+                    "on-error": "#690005",
+                    "on-primary-fixed": "#3e0500",
+                    "primary-fixed": "#ffdad3",
+                    "on-tertiary-container": "#002f2f",
+                    "error-container": "#93000a",
+                    "on-primary": "#640d00",
+                    "surface-container-low": "#1a1c20",
+                    "on-surface-variant": "#dfbfb9",
+                    "surface-container": "#1e2024",
+                    "on-secondary-fixed": "#370d05",
+                    "inverse-on-surface": "#2f3035",
+                    "primary-fixed-dim": "#ffb4a4",
+                    "outline": "#a78a84",
+                    "tertiary-fixed-dim": "#61d8d6",
+                    "on-tertiary": "#003736",
+                    "surface-container-lowest": "#0c0e12",
+                    "surface-tint": "#ffb4a4",
+                    "secondary-container": "#71392d",
+                    "secondary-fixed": "#ffdad3",
+                    "on-secondary": "#522117",
+                    "on-surface": "#e2e2e8",
+                    "on-secondary-fixed-variant": "#6e372b",
+                    "on-primary-container": "#580a00",
+                    "on-tertiary-fixed": "#00201f",
+                    "tertiary-fixed": "#80f5f2",
+                    "surface-dim": "#111317",
+                    "secondary": "#ffb4a4",
+                    "tertiary": "#61d8d6",
+                    "secondary-fixed-dim": "#ffb4a4",
+                    "on-error-container": "#ffdad6",
+                    "on-background": "#e2e2e8",
+                    "inverse-primary": "#a93721",
+                    "surface-container-high": "#282a2e",
+                    "tertiary-container": "#0da19f",
+                    "primary-container": "#ec684c",
+                    "surface-container-highest": "#333539",
+                    "surface-bright": "#37393e",
+                    "on-tertiary-fixed-variant": "#00504f",
+                    "on-primary-fixed-variant": "#88200b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "display": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-white"><div style="height:72px"></div>
+<!-- TopNavBar -->
+
+<!-- Hero Section -->
+<header class="pt-48 pb-32 px-8 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<h1 class="text-6xl md:text-8xl font-serif font-light leading-tight mb-8">
+                Execution <br/>
+<span class="italic text-primary">Library</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed font-body">
+                How modern supply chains actually run. From decision latency to real-time execution — explore how operations move from insight to action.
+            </p>
+</div>
+<div class="md:col-span-5 relative h-64 md:h-96 flex items-center justify-center">
+<div class="absolute inset-0 opacity-20 overflow-hidden">
+<svg class="w-full h-full stroke-primary" fill="none" viewbox="0 0 400 400">
+<path d="M50 200 Q 125 50 200 200 T 350 200" stroke-dasharray="4 4" stroke-width="1"></path>
+<circle cx="50" cy="200" fill="currentColor" r="3"></circle>
+<circle cx="350" cy="200" fill="currentColor" r="3"></circle>
+<path d="M100 150 L 300 250" stroke-width="0.5"></path>
+<path d="M100 250 L 300 150" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="relative z-10 text-right">
+<div class="label-sm uppercase tracking-[0.2em] text-primary mb-4 block">Signal to Execution</div>
+<div class="h-[1px] w-48 bg-gradient-to-r from-transparent via-primary to-transparent ml-auto mb-2"></div>
+<div class="h-[1px] w-32 bg-gradient-to-r from-transparent via-tertiary to-transparent ml-auto"></div>
+</div>
+</div>
+</header>
+<!-- Navigation Tabs -->
+<div class="sticky top-[72px] z-40 bg-surface/80 backdrop-blur-md border-y border-white/5">
+<div class="max-w-[1440px] mx-auto px-8 py-6 overflow-x-auto">
+<div class="flex gap-12 whitespace-nowrap">
+<button class="text-white font-bold tracking-wider uppercase text-xs border-b border-primary pb-1">All</button>
+<button class="text-on-surface-variant hover:text-white font-medium tracking-wider uppercase text-xs transition-colors">Execution Stories</button>
+<button class="text-on-surface-variant hover:text-white font-medium tracking-wider uppercase text-xs transition-colors">Deep Dives</button>
+<button class="text-on-surface-variant hover:text-white font-medium tracking-wider uppercase text-xs transition-colors">Insights</button>
+<button class="text-on-surface-variant hover:text-white font-medium tracking-wider uppercase text-xs transition-colors">Comparisons</button>
+</div>
+</div>
+</div>
+<main class="max-w-[1440px] mx-auto px-8">
+<!-- Section 1: Insights -->
+<section class="py-24">
+<h2 class="label-sm uppercase tracking-[0.3em] text-tertiary mb-12">Insights on Decision Execution</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-60" data-alt="abstract data visualization with glowing orange lines and dark shadows representing digital latency and connectivity in complex systems" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeDvLqfvlzWTPtFiLDnHBM9d80iNJ6A6X7LGk6S5xQwqs_a8aXVQ8RxOd8vznizV_TnVwHLyrzvywt5IhCTTSl-K_Z_KiwNkCUA2qeWdZtpNdw80Tsft-4KVznxkBe8jdPJdUDKxcskA1X8eC7yVwfIdnKeQfo7piz2Aonh0uVgjMDo7oI1wXyOMgkDN7bXmsBmVw9KDZUg4SmoEWt6sYoue6fucmeB9PQbTTEYFe46JuQmnpjhcE183n0bDFNOtaYRpvsx-0asQif"/>
+</div>
+<h3 class="text-2xl font-serif mb-4 group-hover:text-primary transition-colors">The Hidden Cost of Decision Latency</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dashboards don't change outcomes. While you measure, the opportunity vanishes. Delay accumulates until it becomes a structural loss.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-60" data-alt="technological blueprint mapping and digital circuitry pattern on a deep blue and black background illustrating architectural complexity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKg84MLDEBn9CsQphC2wNbLdEq8bOp77efJiotxkayB52CZZNAA4Xxv8SwiwHn4xmtSia7mCaNvAPDf-SJhLvXe6ng3vBnD3vK3aeBfEzXi4CFe2Ta-s4dSjtKzLIhoAScNtA293coTVKv9NZaHiVw-VXGHP3H0WaHiPI_c6I9TXBBWFjKGyGsOlobTNsZ-h4QhVy45867L558O0yKK6NP25_wKoAV0l9dtswPu4ZaKSZMcM0waIoaakWycXaG-DSKEBb_vNRYPQvM"/>
+</div>
+<h3 class="text-2xl font-serif mb-4 group-hover:text-primary transition-colors">Why ERP and Planning Systems Are Not Enough</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Neither executes decisions. Systems of record are the limit of the past; they lack the kinetic capability to act in the now.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-60" data-alt="close-up of a macro lens focusing on microchips with glowing orange highlights symbolizing high-speed digital action and processing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ8gKlJuka_UT_Va-Up0D2NwkoiEq7iZVlXTGgCxAFnuuLvf7L6qoxXgHTMWcAVTpQoc6v4YmwzcDR1VvxMkXIecAQpHZXk3932QigFRtMF4fjZf_Dk8zddblGlxJaiuyv7F5SMmutBpz-a7BWY-YfCIEHCvErZzEgCqahlHfCzbYNAXc0pwbPV8ykYFKqhO6-nfukMVd2khhIymiyDqIWfKWUoi8lfoDCSor41lleWm34q-DqN1PcqUTQDk8M8fPp5Mp5ETR90l61"/>
+</div>
+<h3 class="text-2xl font-serif mb-4 group-hover:text-primary transition-colors">From Visibility to Execution</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Visibility is a passive state. Execution is an active one. Learn how to cross the chasm from seeing a problem to solving it.</p>
+</article>
+</div>
+</section>
+<!-- Section 2: Execution Stories -->
+<section class="py-24 bg-surface-container-low -mx-8 px-8">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="label-sm uppercase tracking-[0.3em] text-primary mb-4">Execution Stories</h2>
+<div class="text-4xl font-serif italic">Operational Masterclasses</div>
+</div>
+<div class="hidden md:block h-[1px] flex-grow mx-12 bg-white/10 mb-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5">
+<div class="bg-surface p-12 group hover:bg-surface-container transition-colors duration-500">
+<span class="text-xs font-mono text-tertiary mb-4 block">Scenario 01</span>
+<h3 class="text-3xl font-serif mb-6 group-hover:text-primary transition-colors">Backorder Resolved in Minutes</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">In a London/Manchester distribution case, DeciOps™ detected a stock-out threat 4 hours ahead of standard systems and automatically rerouted transit stock before the customer even felt the delay.</p>
+<div class="flex items-center gap-2 text-primary font-medium cursor-pointer">
+<span>Read full report</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface p-12 group hover:bg-surface-container transition-colors duration-500">
+<span class="text-xs font-mono text-tertiary mb-4 block">Scenario 02</span>
+<h3 class="text-3xl font-serif mb-6 group-hover:text-primary transition-colors">Demand Spike Managed</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Early signal detection from social and logistics nodes allowed a rapid capacity shift. What usually takes a 48-hour planning cycle was executed in 14 minutes.</p>
+<div class="flex items-center gap-2 text-primary font-medium cursor-pointer">
+<span>Read full report</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface p-12 group hover:bg-surface-container transition-colors duration-500 col-span-1 md:col-span-2">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<span class="text-xs font-mono text-tertiary mb-4 block">Scenario 03</span>
+<h3 class="text-3xl font-serif mb-6 group-hover:text-primary transition-colors">Pre-Expiry Reallocated</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Waste reduction in perishables through automated diversion to secondary markets based on real-time shelf-life analytics and price-elasticity triggers.</p>
+<div class="flex items-center gap-2 text-primary font-medium cursor-pointer">
+<span>Read full report</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="w-full md:w-1/3 aspect-video bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-500" data-alt="industrial warehouse with rhythmic shelving and automated guided vehicles in a high-tech logistics environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW67fwey2A3ciPLFy9dne-ypJ7LySgYPZNb-9nsy9xZWuIcH646K9KDWJhdViJ9534dIwkjVlKz4InPMBo8MxZppC5DcQTumB55-tSixaJW5RieeopDWPhefOSKJHGiVjcl3Dpbp8QV-6-_5aLcSxN7A1UcYUN9GB0Nz5xUEk4YzB2SBQVhKlXRK8iGFzlFw65ZdAndj1l7qOckShl8pxrilt6E3B2edAeCe2R3_gwC7DdQPO_iXxpIk-eTDOabYXI0cqMMtWK4u5q"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: DEEP DIVES -->
+<section class="py-24">
+<h2 class="label-sm uppercase tracking-[0.3em] text-tertiary mb-16 text-center">DEEP DIVES</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-8 flex flex-col md:flex-row justify-between items-center group cursor-pointer transition-all hover:translate-x-2">
+<div class="flex gap-8 items-center">
+<span class="material-symbols-outlined text-primary text-4xl">cable</span>
+<div>
+<h4 class="text-xl font-serif mb-1">ERP Integration</h4>
+<p class="text-on-surface-variant text-sm">Reads signals directly from the core -&gt; writes back actions automatically.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col md:flex-row justify-between items-center group cursor-pointer transition-all hover:translate-x-2">
+<div class="flex gap-8 items-center">
+<span class="material-symbols-outlined text-primary text-4xl">model_training</span>
+<div>
+<h4 class="text-xl font-serif mb-1">Decision Engine</h4>
+<p class="text-on-surface-variant text-sm">The triad of operations: Detect -&gt; Simulate -&gt; Execute in a continuous loop.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col md:flex-row justify-between items-center group cursor-pointer transition-all hover:translate-x-2">
+<div class="flex gap-8 items-center">
+<span class="material-symbols-outlined text-primary text-4xl">psychology</span>
+<div>
+<h4 class="text-xl font-serif mb-1">Autonomy</h4>
+<p class="text-on-surface-variant text-sm">From manual intervention to autonomous execution with human-in-the-loop overrides.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col md:flex-row justify-between items-center group cursor-pointer transition-all hover:translate-x-2">
+<div class="flex gap-8 items-center">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<div>
+<h4 class="text-xl font-serif mb-1">Governance</h4>
+<p class="text-on-surface-variant text-sm">Every automated action is logged, audited, and explained in natural language.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Section 4: Comparison -->
+<section class="py-24 mb-24">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-serif mb-6">Where Systems Stop — And <span class="text-primary italic">DeciOps™ Starts</span></h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">The distinction between capturing data and mastering the operational moment.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10">
+<th class="py-8 font-serif text-xl">Capability</th>
+<th class="py-8 text-sm uppercase tracking-widest text-on-surface-variant text-center">ERP</th>
+<th class="py-8 text-sm uppercase tracking-widest text-on-surface-variant text-center">Planning</th>
+<th class="py-8 text-sm uppercase tracking-widest text-primary text-center">DeciOps™</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr>
+<td class="py-8 font-serif text-lg">Stores data</td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+</tr>
+<tr>
+<td class="py-8 font-serif text-lg">Shows insights</td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-on-surface-variant/30">circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+</tr>
+<tr>
+<td class="py-8 font-serif text-lg">Recommends</td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-on-surface-variant/30">circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-on-surface-variant/30">circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-tertiary">check_circle</span></td>
+</tr>
+<tr>
+<td class="py-8 font-serif text-lg">Executes</td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-on-surface-variant/30">circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-on-surface-variant/30">circle</span></td>
+<td class="py-8 text-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">stars</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container-low border-l-2 border-on-surface-variant/20">
+<div class="text-xs font-mono uppercase text-on-surface-variant mb-4">System of Record</div>
+<div class="text-2xl font-serif mb-2">The Past</div>
+<p class="text-sm text-on-surface-variant">Archival integrity and ledger-based tracking of historical events.</p>
+</div>
+<div class="p-8 bg-surface-container-low border-l-2 border-on-surface-variant/20">
+<div class="text-xs font-mono uppercase text-on-surface-variant mb-4">System of Insight</div>
+<div class="text-2xl font-serif mb-2">The Analysis</div>
+<p class="text-sm text-on-surface-variant">Hypothetical scenarios and visualization of what might happen.</p>
+</div>
+<div class="p-8 bg-surface-container border-l-2 border-primary">
+<div class="text-xs font-mono uppercase text-primary mb-4">System of Action</div>
+<div class="text-2xl font-serif mb-2">The Execution</div>
+<p class="text-sm text-on-surface-variant">Real-time decisions translated into system commands across the value chain.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer CTA -->
+
+</body></html>

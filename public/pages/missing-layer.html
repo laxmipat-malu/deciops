@@ -1,0 +1,463 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>The Missing Layer | DeciOps Manifesto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..800&amp;family=Instrument+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#efeeec",
+                    "on-primary": "#ffffff",
+                    "background": "#faf9f7",
+                    "secondary": "#5d5c74",
+                    "tertiary": "#5a5a6f",
+                    "on-tertiary-fixed-variant": "#454559",
+                    "outline": "#8c716b",
+                    "surface-bright": "#faf9f7",
+                    "surface-container-high": "#e9e8e6",
+                    "on-primary-fixed-variant": "#88200b",
+                    "tertiary-container": "#737388",
+                    "on-secondary-fixed-variant": "#45455b",
+                    "primary-fixed-dim": "#ffb4a4",
+                    "tertiary-fixed-dim": "#c5c4dc",
+                    "primary": "#a5351e",
+                    "on-background": "#1a1c1b",
+                    "surface-variant": "#e3e2e0",
+                    "on-primary-container": "#fffbff",
+                    "surface-tint": "#a93721",
+                    "surface-dim": "#dadad8",
+                    "surface": "#faf9f7",
+                    "secondary-fixed": "#e2e0fc",
+                    "primary-container": "#c74d34",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#3e0500",
+                    "secondary-container": "#e2e0fc",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#fffbff",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#58413d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#191a2b",
+                    "on-surface": "#1a1c1b",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f1ef",
+                    "outline-variant": "#dfbfb9",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-secondary-fixed": "#1a1a2e",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed": "#e2e0f9",
+                    "inverse-primary": "#ffb4a4",
+                    "secondary-fixed-dim": "#c6c4df",
+                    "primary-fixed": "#ffdad3",
+                    "surface-container-low": "#f4f3f1",
+                    "on-secondary-container": "#63627a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "display": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"],
+                    "serif-accent": ["Instrument Serif", "serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(45deg, #a5351e 0%, #c74d34 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .evolution-grid-line {
+            background-image: radial-gradient(circle, #a5351e 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-12{top:-3rem}.bottom-0{bottom:0px}.left-0{left:0px}.left-1\/2{left:50%}.left-6{left:1.5rem}.right-0{right:0px}.top-0{top:0px}.top-1\/2{top:50%}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-24{margin-bottom:6rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-4{margin-left:1rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-\[3\/4\]{aspect-ratio:3/4}.h-12{height:3rem}.h-24{height:6rem}.h-\[1px\]{height:1px}.h-\[800px\]{height:800px}.h-full{height:100%}.w-1{width:0.25rem}.w-12{width:3rem}.w-\[1px\]{width:1px}.w-\[800px\]{width:800px}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-\[1440px\]{max-width:1440px}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-24{gap:6rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-12 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(3rem * var(--tw-space-x-reverse));margin-left:calc(3rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-24 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(6rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(6rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:0.75rem}.rounded-lg{border-radius:0.25rem}.rounded-xl{border-radius:0.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-\[\#a5351e\]{--tw-border-opacity:1;border-color:rgb(165 53 30 / var(--tw-border-opacity, 1))}.border-outline{--tw-border-opacity:1;border-color:rgb(140 113 107 / var(--tw-border-opacity, 1))}.border-outline-variant{--tw-border-opacity:1;border-color:rgb(223 191 185 / var(--tw-border-opacity, 1))}.border-primary{--tw-border-opacity:1;border-color:rgb(165 53 30 / var(--tw-border-opacity, 1))}.border-primary\/20{border-color:rgb(165 53 30 / 0.2)}.border-surface\/10{border-color:rgb(250 249 247 / 0.1)}.bg-\[\#f4f3f1\]{--tw-bg-opacity:1;background-color:rgb(244 243 241 / var(--tw-bg-opacity, 1))}.bg-\[\#faf9f7\]\/85{background-color:rgb(250 249 247 / 0.85)}.bg-background{--tw-bg-opacity:1;background-color:rgb(250 249 247 / var(--tw-bg-opacity, 1))}.bg-error-container{--tw-bg-opacity:1;background-color:rgb(255 218 214 / var(--tw-bg-opacity, 1))}.bg-on-surface{--tw-bg-opacity:1;background-color:rgb(26 28 27 / var(--tw-bg-opacity, 1))}.bg-outline-variant{--tw-bg-opacity:1;background-color:rgb(223 191 185 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(165 53 30 / var(--tw-bg-opacity, 1))}.bg-primary\/5{background-color:rgb(165 53 30 / 0.05)}.bg-surface{--tw-bg-opacity:1;background-color:rgb(250 249 247 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(233 232 230 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(244 243 241 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-surface\/5{background-color:rgb(250 249 247 / 0.05)}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-12{padding:3rem}.p-16{padding:4rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-8{padding:2rem}.px-12{padding-left:3rem;padding-right:3rem}.px-16{padding-left:4rem;padding-right:4rem}.px-8{padding-left:2rem;padding-right:2rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-48{padding-top:12rem;padding-bottom:12rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pt-32{padding-top:8rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-\[\'Instrument_Serif\'\]{font-family:'Instrument Serif'}.font-\[\'JetBrains_Mono\'\]{font-family:'JetBrains Mono'}.font-\[\'Newsreader\'\]{font-family:'Newsreader'}.font-body{font-family:Manrope, sans-serif}.font-display{font-family:Newsreader, serif}.font-label{font-family:Inter, sans-serif}.font-mono{font-family:JetBrains Mono, monospace}.font-serif-accent{font-family:Instrument Serif, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-7xl{font-size:4.5rem;line-height:1}.text-8xl{font-size:6rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[0\.85\]{line-height:0.85}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#a5351e\]{--tw-text-opacity:1;color:rgb(165 53 30 / var(--tw-text-opacity, 1))}.text-error{--tw-text-opacity:1;color:rgb(186 26 26 / var(--tw-text-opacity, 1))}.text-on-background{--tw-text-opacity:1;color:rgb(26 28 27 / var(--tw-text-opacity, 1))}.text-on-error-container{--tw-text-opacity:1;color:rgb(147 0 10 / var(--tw-text-opacity, 1))}.text-on-primary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(26 28 27 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(88 65 61 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(165 53 30 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78 / var(--tw-text-opacity, 1))}.text-stone-900{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.text-surface{--tw-text-opacity:1;color:rgb(250 249 247 / var(--tw-text-opacity, 1))}.text-surface\/30{color:rgb(250 249 247 / 0.3)}.text-surface\/40{color:rgb(250 249 247 / 0.4)}.text-surface\/60{color:rgb(250 249 247 / 0.6)}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-2{text-decoration-thickness:2px}.underline-offset-8{text-underline-offset:8px}.opacity-20{opacity:0.2}.opacity-30{opacity:0.3}.opacity-40{opacity:0.4}.opacity-5{opacity:0.05}.opacity-50{opacity:0.5}.opacity-60{opacity:0.6}.opacity-80{opacity:0.8}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[2px\]{--tw-blur:blur(2px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.selection\:bg-primary-fixed *::selection{--tw-bg-opacity:1;background-color:rgb(255 218 211 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-fixed *::selection{--tw-text-opacity:1;color:rgb(62 5 0 / var(--tw-text-opacity, 1))}.selection\:bg-primary-fixed::selection{--tw-bg-opacity:1;background-color:rgb(255 218 211 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-fixed::selection{--tw-text-opacity:1;color:rgb(62 5 0 / var(--tw-text-opacity, 1))}.hover\:translate-y-\[-1px\]:hover{--tw-translate-y:-1px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-surface\/10:hover{background-color:rgb(250 249 247 / 0.1)}.hover\:text-\[\#a5351e\]:hover{--tw-text-opacity:1;color:rgb(165 53 30 / var(--tw-text-opacity, 1))}.hover\:text-stone-900:hover{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:border-primary{--tw-border-opacity:1;border-color:rgb(165 53 30 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:text-primary{--tw-text-opacity:1;color:rgb(165 53 30 / var(--tw-text-opacity, 1))}.dark\:bg-stone-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(28 25 23 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-9xl{font-size:8rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:block{display:block}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style></head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed" data-mode="connect"><div style="height:72px"></div>
+<!-- TopNavBar Navigation Shell -->
+
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 py-32 max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-8">
+<span class="font-mono text-primary uppercase tracking-[0.3em] text-xs mb-8 block">Strategic Manifesto</span>
+<h1 class="font-display text-8xl md:text-9xl leading-[0.85] tracking-tighter text-on-background mb-12">
+                    The Missing <br><span class="italic font-serif-accent text-primary">Layer</span>
+</h1>
+<p class="font-display text-3xl text-on-surface-variant max-w-2xl leading-snug mb-16">
+                    Enterprise systems were built to record and analyze. But they were never built to act. <span class="text-on-background font-semibold">DeciOps is the missing layer</span> — where decisions are executed, not just understood.
+                </p>
+<div class="p-8 border-l-2 border-primary bg-surface-container-low max-w-xl">
+<p class="font-mono text-sm uppercase tracking-widest text-primary mb-2">The Imperative</p>
+<p class="font-display text-2xl italic">"Insight without execution is delay. Delay is cost."</p>
+</div>
+</div>
+<div class="lg:col-span-4 h-full flex items-end">
+<div class="relative w-full aspect-[3/4] bg-surface-container-high overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Modern architectural brutalist building with sharp lines and high contrast shadows under a clear blue sky, minimalist and powerful" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4HaNO2Vrk7sfEzu4tn1ZvJHROd2D8h3xzwaEfl0uLMw3ZMBTYmu6rJ8Jo8i-n07c8nbEej1gwZmeg_Z2mFT-8yaucuptuusIYuZomj9F0VsHoZ1TFwdlyHnY12qODTCtW-BdDMN43g12d79_nQUIRAoWt6iiuSWMNh-rjoGMe8Q5IyI1RcPHWRKgRgmbEPVwkoMn03RjWT6VwrDCtnx8_a0boYj_y9wQfXvh5LGXYZdJgNkjg2lCnUNb1SXvAyB5458n87tOe2Iu_">
+</div>
+</div>
+</section>
+<!-- Section 2: Where Operations Actually Break -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid lg:grid-cols-2 gap-24 items-start">
+<div class="">
+<h2 class="font-display text-6xl tracking-tight mb-12">Where Supply Operations <br><span class="italic">Actually</span> Break</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12">
+                            Supply chains don't fail because of lack of data. They fail because decisions don't turn into action fast enough.
+                        </p>
+<div class="space-y-12">
+<div class="flex items-start gap-6">
+<span class="font-mono text-primary text-xl">01</span>
+<div class="">
+<h4 class="font-bold text-xl mb-2">Insights arrive too late</h4>
+<p class="text-on-surface-variant">By the time the report is generated, the market window has already shifted.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="font-mono text-primary text-xl">02</span>
+<div>
+<h4 class="font-bold text-xl mb-2">Decisions require coordination</h4>
+<p class="text-on-surface-variant">Action is held hostage by cross-departmental emails and status meetings.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="font-mono text-primary text-xl">03</span>
+<div class="">
+<h4 class="font-bold text-xl mb-2">Execution is fragmented</h4>
+<p class="text-on-surface-variant">Systems don't talk back to the real world, leaving a massive manual gap.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Signal Trace Diagram -->
+<div class="bg-surface-container-lowest p-12 rounded-xl relative overflow-hidden">
+<div class="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant mb-12 flex justify-between">
+<span>Operational Signal Trace</span>
+<span class="text-primary">Latency Detected</span>
+</div>
+<div class="relative space-y-24">
+<!-- Trace Path -->
+<div class="absolute left-6 top-0 bottom-0 w-[1px] bg-outline-variant opacity-30"></div>
+<div class="relative flex items-center gap-12 group">
+<div class="w-12 h-12 rounded-full border border-outline flex items-center justify-center bg-surface shrink-0 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-on-surface">sensors</span>
+</div>
+<div class="font-mono text-sm">Signal Received <span class="block text-[10px] opacity-50 uppercase tracking-tighter">0.0ms</span></div>
+</div>
+<div class="relative flex items-center gap-12 group">
+<div class="w-12 h-12 rounded-full border border-outline flex items-center justify-center bg-surface shrink-0 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-on-surface">psychology</span>
+</div>
+<div class="font-mono text-sm">Decision Formulated <span class="block text-[10px] opacity-50 uppercase tracking-tighter">+14.2ms</span></div>
+</div>
+<div class="relative flex items-center gap-12">
+<div class="absolute -top-12 left-6 w-1 bg-primary h-24 blur-[2px] opacity-50"></div>
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary">bolt</span>
+</div>
+<div>
+<div class="font-mono text-sm font-bold text-primary">Execution Gap</div>
+<div class="font-mono text-[10px] uppercase text-error">+48 Hours (Human Latency)</div>
+</div>
+</div>
+<div class="relative flex items-center gap-12 opacity-40">
+<div class="w-12 h-12 rounded-full border border-outline flex items-center justify-center bg-surface shrink-0">
+<span class="material-symbols-outlined text-on-surface">settings</span>
+</div>
+<div class="font-mono text-sm">Action Completed</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: The Problem Is Not Visibility -->
+<section class="py-48 px-12 bg-surface text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-display text-7xl tracking-tighter mb-16">The Problem Is Not Visibility. <br><span class="italic">It Is Execution.</span></h2>
+<p class="font-display text-3xl leading-relaxed text-on-surface-variant mb-16">
+                    For years, enterprises invested in suppl chain visibility — dashboards, analytics, planning tools. But visibility does not create outcomes.
+                </p>
+<div class="inline-block py-8 px-16 border-y border-outline-variant">
+<p class="font-mono text-xl tracking-tight text-primary">"Insight without execution is delay. Delay is cost."</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Enterprise Systems Evolved in Two Layers -->
+<!-- Section 5: The Execution Gap -->
+<section class="py-32 px-12">
+<div class="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5">
+<h2 class="font-display text-6xl tracking-tight mb-8">The Supply chain Execution Gap</h2>
+<p class="text-2xl text-on-surface-variant leading-relaxed">
+                        Between insight and execution lies manual coordination — emails, meetings, spreadsheets, and delays.
+                    </p>
+</div>
+<div class="lg:col-span-7 grid md:grid-cols-2 gap-8">
+<div class="p-10 bg-surface-container-low border-b border-primary">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">hourglass_empty</span>
+<h4 class="text-xl font-bold mb-4">Decisions wait for alignment</h4>
+<p class="text-on-surface-variant">Average enterprise response time to a disruption is 4.2 days. Markets move in minutes.</p>
+</div>
+<div class="p-10 bg-surface-container-low border-b border-primary">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">groups</span>
+<h4 class="text-xl font-bold mb-4">Actions depend on people</h4>
+<p class="text-on-surface-variant">Highly skilled engineers and operators spend 60% of their time on manual process glue.</p>
+</div>
+<div class="p-10 bg-surface-container-low border-b border-primary">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">cloud_off</span>
+<h4 class="text-xl font-bold mb-4">Systems don't act</h4>
+<p class="text-on-surface-variant">Legacy software is passive. It requires a human to press "go," creating a permanent bottleneck.</p>
+</div>
+<div class="p-10 bg-primary text-on-primary">
+<p class="font-mono text-xs uppercase tracking-widest mb-6 opacity-80">Root Cause Analysis</p>
+<p class="text-2xl font-display leading-tight">"This is where most operational inefficiencies originate."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: The Evolution of Supply Chain Enterprise Systems -->
+<section class="py-48 px-12 bg-on-surface text-surface relative overflow-hidden">
+<div class="absolute inset-0 evolution-grid-line opacity-5"></div>
+<div class="max-w-[1440px] mx-auto relative z-10">
+<div class="mb-24 text-center">
+<span class="font-mono text-primary text-xs uppercase tracking-widest block mb-4">Historical Progression</span>
+<h2 class="font-display text-6xl md:text-7xl mb-8">Evolution of Supply Chain <br><span class="italic text-primary">Enterprise Systems</span></h2>
+<p class="font-display text-2xl text-surface/60 max-w-2xl mx-auto italic">
+            "DeciOps platform transforms operational decisions into continuously executable actions across enterprise systems."
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+<!-- Stage 1 -->
+<div class="p-8 border border-surface/10 bg-surface/5 hover:bg-surface/10 transition-colors flex flex-col h-full group">
+<div class="font-mono text-surface/30 mb-8 group-hover:text-primary transition-colors">01</div>
+<div class="mb-8">
+<h3 class="font-display text-2xl mb-1">ERP Systems</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-surface/40">Systems of Record</p>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Purpose</p>
+<p class="text-sm font-medium">Managing transactions</p>
+</div>
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Capabilities</p>
+<p class="text-sm text-surface/60 leading-relaxed">Orders, Inventory, Procurement, Production, Finance</p>
+</div>
+<div class="pt-6 border-t border-surface/10 mt-auto">
+<p class="font-mono text-[10px] uppercase text-error mb-2">Limitation</p>
+<p class="text-sm italic opacity-50">No continuous optimization.</p>
+</div>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="p-8 border border-surface/10 bg-surface/5 hover:bg-surface/10 transition-colors flex flex-col h-full group">
+<div class="font-mono text-surface/30 mb-8 group-hover:text-primary transition-colors">02</div>
+<div class="mb-8">
+<h3 class="font-display text-2xl mb-1">Planning Systems</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-surface/40">Forecasting &amp; Optimization</p>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Purpose</p>
+<p class="text-sm font-medium">Planning ahead</p>
+</div>
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Capabilities</p>
+<p class="text-sm text-surface/60 leading-relaxed">Forecasting, Supply/Demand planning, Scenario planning</p>
+</div>
+<div class="pt-6 border-t border-surface/10 mt-auto">
+<p class="font-mono text-[10px] uppercase text-error mb-2">Limitation</p>
+<p class="text-sm italic opacity-50">No real-time adaptation.</p>
+</div>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="p-8 border border-surface/10 bg-surface/5 hover:bg-surface/10 transition-colors flex flex-col h-full group">
+<div class="font-mono text-surface/30 mb-8 group-hover:text-primary transition-colors">03</div>
+<div class="mb-8">
+<h3 class="font-display text-2xl mb-1">Control Towers</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-surface/40">Systems of Visibility</p>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Purpose</p>
+<p class="text-sm font-medium">Monitoring</p>
+</div>
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Capabilities</p>
+<p class="text-sm text-surface/60 leading-relaxed">Tracking, ETA monitoring, Alerts</p>
+</div>
+<div class="pt-6 border-t border-surface/10 mt-auto">
+<p class="font-mono text-[10px] uppercase text-error mb-2">Limitation</p>
+<p class="text-sm italic opacity-50">Depends on humans to act.</p>
+</div>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="p-8 border border-surface/10 bg-surface/5 hover:bg-surface/10 transition-colors flex flex-col h-full group">
+<div class="font-mono text-surface/30 mb-8 group-hover:text-primary transition-colors">04</div>
+<div class="mb-8">
+<h3 class="font-display text-2xl mb-1">Decision Intelligence</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-surface/40">Systems of Recommendation</p>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Purpose</p>
+<p class="text-sm font-medium">AI support</p>
+</div>
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Capabilities</p>
+<p class="text-sm text-surface/60 leading-relaxed">Modeling, AI recommendations, Simulations</p>
+</div>
+<div class="pt-6 border-t border-surface/10 mt-auto">
+<p class="font-mono text-[10px] uppercase text-error mb-2">Limitation</p>
+<p class="text-sm italic opacity-50">Stops before execution.</p>
+</div>
+</div>
+</div>
+<!-- Stage 5: DeciOps -->
+<div class="p-8 border-2 border-primary bg-primary/5 flex flex-col h-full relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-primary text-4xl animate-pulse">bolt</span>
+</div>
+<div class="font-mono text-primary mb-8">05</div>
+<div class="mb-8">
+<h3 class="font-display text-2xl mb-1">DeciOps Platforms</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-primary font-bold">Systems of Operational Execution</p>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Purpose</p>
+<p class="text-sm font-bold">Continuous orchestration and execution</p>
+</div>
+<div>
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Capabilities</p>
+<p class="text-sm text-surface leading-relaxed">Backorder resolution, CTP execution, Dynamic allocation, ERP write-back</p>
+</div>
+<div class="pt-6 border-t border-primary/20 mt-auto">
+<p class="font-mono text-[10px] uppercase text-primary mb-2">Impact</p>
+<p class="text-sm italic font-display text-primary">"The evolution is complete."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: What This Looks Like -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-16">
+<span class="font-mono text-primary text-xs uppercase tracking-widest block mb-4">Scenario Analysis</span>
+<h2 class="font-display text-6xl">From Detection to Resolution</h2>
+</div>
+<div class="bg-surface-container-lowest p-16 rounded-xl">
+<div class="flex items-center gap-4 mb-12">
+<div class="p-3 bg-error-container text-on-error-container rounded-full">
+<span class="material-symbols-outlined">priority_high</span>
+</div>
+<h4 class="text-2xl font-bold">Demand Spike: West Region <span class="font-mono text-sm font-normal opacity-50 ml-4">// Shortage imminent</span></h4>
+</div>
+<div class="grid lg:grid-cols-2 gap-16 relative">
+<!-- Connector -->
+<div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant opacity-20"></div>
+<div>
+<h5 class="font-mono text-xs uppercase tracking-widest mb-8 opacity-50">Traditional Systems</h5>
+<div class="space-y-12">
+<div class="flex gap-6 opacity-60">
+<span class="material-symbols-outlined">visibility</span>
+<div>
+<p class="font-bold">Detect the issue</p>
+<p class="text-sm">Alert appears on dashboard under 'Red' category.</p>
+</div>
+</div>
+<div class="flex gap-6 opacity-60">
+<span class="material-symbols-outlined">description</span>
+<div>
+<p class="font-bold">Surface reports</p>
+<p class="text-sm">Weekly sync evaluates the gravity of regional shortage.</p>
+</div>
+</div>
+<div class="flex gap-6 opacity-60">
+<span class="material-symbols-outlined">pending_actions</span>
+<div>
+<p class="font-bold">Wait for action</p>
+<p class="text-sm">Managerial approval required for inventory reallocation.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h5 class="font-mono text-xs uppercase tracking-widest mb-8 text-primary">With DeciOps</h5>
+<div class="space-y-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">radar</span>
+<div>
+<p class="font-bold">Detects imbalance</p>
+<p class="text-sm">Instant anomaly detection across global inventory nodes.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">model_training</span>
+<div>
+<p class="font-bold">Evaluates options</p>
+<p class="text-sm">Simulates cost/benefit of 400+ reallocation paths.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary" data-weight="fill">task_alt</span>
+<div>
+<p class="font-bold">Executes reallocation</p>
+<p class="text-sm">Directly pushes instructions to TMS and WMS layers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Final CTA -->
+<section class="py-48 px-12 bg-background relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] editorial-gradient rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-display text-7xl mb-12">From Insight to Action — <span class="italic">Instantly.</span></h2>
+<p class="text-2xl text-on-surface-variant leading-relaxed mb-16">
+                    Knowing what to do is no longer enough. Modern operations demand systems that act. DeciOps bridges the gap between passive visibility and real-time execution.
+                </p>
+<div class="font-display text-5xl font-bold mb-16">
+                    Not visibility — <span class="text-primary underline decoration-2 underline-offset-8">execution.</span>
+</div>
+<button class="editorial-gradient text-on-primary px-16 py-6 rounded-lg font-label text-lg uppercase tracking-widest font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02]">
+                    Build the supply chain&nbsp;</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+</body></html>
