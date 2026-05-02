@@ -6,6 +6,7 @@ const links = [
   { to: '/use-cases', label: 'Use Cases' },
   { to: '/missing-layer', label: 'The Missing Layer' },
   { to: '/execution-library', label: 'Execution Library' },
+  { to: '/about', label: 'About' },
 ];
 
 export default function Nav() {

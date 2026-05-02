@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DeciOps | The Decision Operating System</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e3e2e0",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#faf9f7",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-container": "#737388",
+                    "tertiary": "#5a5a6f",
+                    "secondary-container": "#e2e0fc",
+                    "surface-container-high": "#e9e8e6",
+                    "primary": "#a5351e",
+                    "outline-variant": "#dfbfb9",
+                    "on-background": "#1a1c1b",
+                    "on-secondary-fixed": "#1a1a2e",
+                    "on-secondary-container": "#63627a",
+                    "on-surface-variant": "#58413d",
+                    "secondary-fixed": "#e2e0fc",
+                    "on-tertiary-fixed-variant": "#454559",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#ffb4a4",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary": "#ffffff",
+                    "surface": "#faf9f7",
+                    "on-tertiary-fixed": "#191a2b",
+                    "secondary": "#5d5c74",
+                    "primary-fixed": "#ffdad3",
+                    "tertiary-fixed": "#e2e0f9",
+                    "surface-dim": "#dadad8",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#a93721",
+                    "primary-container": "#c74d34",
+                    "on-secondary-fixed-variant": "#45455b",
+                    "secondary-fixed-dim": "#c6c4df",
+                    "inverse-primary": "#ffb4a4",
+                    "on-tertiary": "#ffffff",
+                    "background": "#faf9f7",
+                    "surface-container": "#efeeec",
+                    "error": "#ba1a1a",
+                    "outline": "#8c716b",
+                    "surface-container-low": "#f4f3f1",
+                    "surface-container-highest": "#e3e2e0",
+                    "inverse-on-surface": "#f1f1ef",
+                    "on-primary-fixed-variant": "#88200b",
+                    "inverse-surface": "#2f3130",
+                    "tertiary-fixed-dim": "#c5c4dc",
+                    "on-primary-container": "#fffbff",
+                    "on-primary-fixed": "#3e0500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "display": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"],
+                    "sans": ["DM Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .decision-gradient {
+            background: linear-gradient(45deg, #a5351e, #c74d34);
+        }
+        .technical-ticker {
+            background: rgba(99, 98, 122, 0.05);
+            border-left: 2px solid #a5351e;
+        }
+        .sovereign-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #dfbfb9, transparent);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed"><div style="height:72px"></div>
+<!-- TopNavBar -->
+
+<main class="pt-24">
+<!-- 1. Hero Section -->
+<section class="relative min-h-[765px] flex items-center px-8 overflow-hidden bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="font-mono text-xs uppercase tracking-[0.3em] text-on-surface-variant mb-6 block">Supply Chain Execution Layer</span>
+<h1 class="text-6xl lg:text-7xl font-display font-bold leading-[1.1] tracking-tighter text-[#1a1a2e] mb-8 italic">
+                        The Decision Operating System for Adaptive Supply Chains
+                    </h1>
+<p class="text-lg lg:text-xl text-on-surface-variant font-sans leading-relaxed mb-10 max-w-xl">
+                        DeciOps continuously senses operational disruptions, orchestrates supply chain decisions, and executes actions across enterprise systems in real time. Modern supply chains can no longer rely on static workflows, delayed escalations, and manual coordination. DeciOps enables enterprises to move from operational visibility to continuous decision execution.
+                    </p>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="decision-gradient text-white px-8 py-4 rounded-md font-sans text-lg font-medium hover:scale-105 transition-transform">
+                            Request Demo
+                        </button>
+<button class="border border-outline-variant text-[#1a1a2e] px-8 py-4 rounded-md font-sans text-lg font-medium hover:bg-surface-container-high transition-colors">
+                            Explore Platform
+                        </button>
+</div>
+</div>
+<div class="relative lg:h-[600px] flex items-center justify-center">
+<div class="relative w-full aspect-square max-w-[500px]">
+<div class="absolute inset-0 rounded-full border border-primary/10 animate-pulse"></div>
+<div class="absolute inset-8 rounded-full border border-primary/5"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="grid grid-cols-2 gap-4 text-center">
+<div class="p-6 bg-surface-container-lowest glass-panel rounded-lg shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="sensors">sensors</span>
+<div class="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant">Sense</div>
+</div>
+<div class="p-6 bg-surface-container-lowest glass-panel rounded-lg shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="psychology">psychology</span>
+<div class="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant">Evaluate</div>
+</div>
+<div class="p-6 bg-surface-container-lowest glass-panel rounded-lg shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="balance">balance</span>
+<div class="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant">Decide</div>
+</div>
+<div class="p-6 bg-primary text-white rounded-lg shadow-sm">
+<span class="material-symbols-outlined mb-2" data-icon="bolt">bolt</span>
+<div class="font-mono text-[10px] uppercase tracking-widest opacity-80">Execute</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Operational Outcomes Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e] mb-6">Built for Real-Time Supply Chain Execution</h2>
+<div class="sovereign-line mx-auto w-48"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Reduce Operational Decision Latency</h3>
+<p class="text-on-surface-variant font-sans text-sm">Eliminate the lag between signal detection and system execution with automated logic pathways.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Improve Fill Rates &amp; SLA Adherence</h3>
+<p class="text-on-surface-variant font-sans text-sm">Dynamic re-routing and inventory re-balancing to meet customer commitments without manual intervention.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Reduce Planner Overload</h3>
+<p class="text-on-surface-variant font-sans text-sm">Offload repetitive operational micro-decisions to DeciOps agents, allowing humans to focus on strategy.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Increase Execution Velocity</h3>
+<p class="text-on-surface-variant font-sans text-sm">Move from weekly planning cycles to continuous operational adjustments that hit the ERP in seconds.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Improve Supply Chain Resilience</h3>
+<p class="text-on-surface-variant font-sans text-sm">Autonomous response to disruptions ensures the network remains fluid even during high volatility events.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border border-outline-variant/5">
+<h3 class="text-xl font-display font-bold mb-4">Govern Operational Autonomy</h3>
+<p class="text-on-surface-variant font-sans text-sm">Full explainability and control thresholds ensure every automated decision aligns with corporate policy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. The Shift Section -->
+<section class="py-32 bg-[#1a1a2e] text-white">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<h2 class="text-5xl font-display font-bold mb-8 italic">Supply Chains Have Become Adaptive</h2>
+<p class="text-xl text-stone-300 font-sans leading-relaxed mb-6">
+                        In an era of global volatility and instant customer expectations, the static nature of enterprise systems has become a bottleneck. Traditional architectures were designed for stable transactions and batch planning.
+                    </p>
+<p class="text-lg text-stone-400 font-sans leading-relaxed">
+                        Today, operational teams are overwhelmed by factors they can't control: cascading backorders, inventory conflicts, fulfillment delays, and fragmented vendor responses. Visibility isn't enough; continuous decision execution is the new requirement.
+                    </p>
+</div>
+<div class="lg:col-span-5 bg-white/5 p-10 rounded-2xl border border-white/10 backdrop-blur-sm">
+<h4 class="font-mono text-xs uppercase tracking-widest text-primary mb-6">Overwhelm Factors</h4>
+<ul class="space-y-4 font-sans text-stone-200">
+<li class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Chronic Backorder Spirals</span></li>
+<li class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Multi-Node Inventory Conflicts</span></li>
+<li class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Last-Mile Fulfillment Delays</span></li>
+<li class="flex items-center space-x-3"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Siloed Logistics Coordination</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 4. The Missing Layer Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e]">Enterprise Systems Have a Gap</h2>
+</div>
+<div class="max-w-5xl mx-auto px-8">
+<div class="space-y-4">
+<div class="flex items-center bg-white p-6 rounded-lg border border-outline-variant/10 shadow-sm">
+<div class="w-48 font-bold font-display text-primary">ERP</div>
+<div class="flex-1 font-sans text-sm text-on-surface-variant">Static System of Record &amp; Transactions</div>
+</div>
+<div class="flex items-center justify-center py-2"><span class="material-symbols-outlined text-outline-variant">south</span></div>
+<div class="flex items-center bg-white p-6 rounded-lg border border-outline-variant/10 shadow-sm">
+<div class="w-48 font-bold font-display text-primary">Planning (APS)</div>
+<div class="flex-1 font-sans text-sm text-on-surface-variant">Forecasts &amp; Mid-to-Long Term Optimization</div>
+</div>
+<div class="flex items-center justify-center py-2"><span class="material-symbols-outlined text-outline-variant">south</span></div>
+<div class="flex items-center bg-white p-6 rounded-lg border border-outline-variant/10 shadow-sm">
+<div class="w-48 font-bold font-display text-primary">Control Towers</div>
+<div class="flex-1 font-sans text-sm text-on-surface-variant">Visibility &amp; Alerting (What happened?)</div>
+</div>
+<div class="flex items-center justify-center py-2"><span class="material-symbols-outlined text-outline-variant">south</span></div>
+<div class="flex items-center bg-white p-6 rounded-lg border border-outline-variant/10 shadow-sm">
+<div class="w-48 font-bold font-display text-primary">Decision Intelligence</div>
+<div class="flex-1 font-sans text-sm text-on-surface-variant">Recommendations (What should we do?)</div>
+</div>
+<div class="flex items-center justify-center py-2"><span class="material-symbols-outlined text-primary animate-bounce">south</span></div>
+<div class="flex items-center decision-gradient p-8 rounded-lg shadow-xl text-white transform scale-105">
+<div class="w-48 font-bold font-display text-2xl italic">DeciOps</div>
+<div class="flex-1 font-sans text-lg font-medium">Operational Decision Execution (Just do it.)</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Business Impact Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-[#1a1a2e] mb-8">Every Operational Decision Has Business Impact</h2>
+<p class="text-lg text-on-surface-variant font-sans mb-10 leading-relaxed">
+                            A single delayed transfer or an unoptimized inventory allocation ripples across the entire P&amp;L. DeciOps continuously evaluates operational trade-offs in real time to protect service levels, revenue, and execution performance.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 border-l-2 border-primary bg-surface-container-low">
+<h4 class="font-bold mb-2">Customer Commitments</h4>
+<p class="text-xs text-on-surface-variant">Protecting brand reputation through delivery reliability.</p>
+</div>
+<div class="p-6 border-l-2 border-primary bg-surface-container-low">
+<h4 class="font-bold mb-2">Revenue Realization</h4>
+<p class="text-xs text-on-surface-variant">Capturing demand by ensuring product availability.</p>
+</div>
+<div class="p-6 border-l-2 border-primary bg-surface-container-low">
+<h4 class="font-bold mb-2">Production Schedules</h4>
+<p class="text-xs text-on-surface-variant">Preventing factory downtime with adaptive material flow.</p>
+</div>
+<div class="p-6 border-l-2 border-primary bg-surface-container-low">
+<h4 class="font-bold mb-2">Inventory Efficiency</h4>
+<p class="text-xs text-on-surface-variant">Reducing working capital locked in the wrong nodes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. What DeciOps Does Section -->
+<section class="py-32 bg-on-secondary-fixed text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20">
+<h2 class="text-5xl font-display font-bold italic mb-6">Decisions Become Executable Operations</h2>
+<p class="text-stone-400 font-sans max-w-2xl">We bridge the gap between "knowing what to do" and "actually doing it" within your existing systems of record.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="space-y-6">
+<div class="text-primary font-mono text-xs uppercase tracking-widest">Core Capabilities</div>
+<ul class="space-y-4 font-sans text-stone-200">
+<li class="flex items-center space-x-4"><span class="material-symbols-outlined text-primary" data-icon="search">search</span><span>Detect Disruptions</span></li>
+<li class="flex items-center space-x-4"><span class="material-symbols-outlined text-primary" data-icon="insights">insights</span><span>Evaluate Trade-offs</span></li>
+<li class="flex items-center space-x-4"><span class="material-symbols-outlined text-primary" data-icon="hub">hub</span><span>Coordinate Workflows</span></li>
+<li class="flex items-center space-x-4"><span class="material-symbols-outlined text-primary" data-icon="shield">shield</span><span>Govern Autonomy</span></li>
+</ul>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="bg-white/5 p-8 rounded-lg border border-white/10">
+<h4 class="font-display font-bold text-xl mb-4 text-primary-fixed-dim">Backorder Resolution</h4>
+<p class="text-sm text-stone-400">Automated prioritization and allocation to clear order backlogs based on customer tiers.</p>
+</div>
+<div class="bg-white/5 p-8 rounded-lg border border-white/10">
+<h4 class="font-display font-bold text-xl mb-4 text-primary-fixed-dim">Capable-to-Promise (CTP)</h4>
+<p class="text-sm text-stone-400">Real-time commitment calculation that accounts for material and capacity constraints.</p>
+</div>
+<div class="bg-white/5 p-8 rounded-lg border border-white/10">
+<h4 class="font-display font-bold text-xl mb-4 text-primary-fixed-dim">Inventory Allocation</h4>
+<p class="text-sm text-stone-400">Intelligent re-balancing of stock across regional hubs to meet shifting demand signals.</p>
+</div>
+<div class="bg-white/5 p-8 rounded-lg border border-white/10">
+<h4 class="font-display font-bold text-xl mb-4 text-primary-fixed-dim">ERP Write-Back</h4>
+<p class="text-sm text-stone-400">Direct execution of decisions by writing back to SAP, Oracle, or Microsoft Dynamics.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. How DeciOps Works Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e]">How DeciOps Works</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<div class="text-center p-6 group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">radar</span>
+</div>
+<h4 class="font-bold mb-2">Sense</h4>
+<p class="text-xs text-on-surface-variant">Continuous monitoring of signals across ERP, TMS, and external data.</p>
+</div>
+<div class="text-center p-6 group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">model_training</span>
+</div>
+<h4 class="font-bold mb-2">Evaluate</h4>
+<p class="text-xs text-on-surface-variant">Simulating scenarios and trade-offs using specialized AI agents.</p>
+</div>
+<div class="text-center p-6 group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<h4 class="font-bold mb-2">Decide</h4>
+<p class="text-xs text-on-surface-variant">Selection of the optimal action based on business policies and confidence.</p>
+</div>
+<div class="text-center p-6 group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h4 class="font-bold mb-2">Execute</h4>
+<p class="text-xs text-on-surface-variant">Direct write-back to enterprise systems to operationalize the decision.</p>
+</div>
+<div class="text-center p-6 group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">auto_graph</span>
+</div>
+<h4 class="font-bold mb-2">Learn</h4>
+<p class="text-xs text-on-surface-variant">Capturing outcomes to continuously refine the decision logic over time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Command Center Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-2xl order-2 lg:order-1">
+<div class="bg-stone-900 px-6 py-3 flex items-center justify-between border-b border-stone-800">
+<div class="flex space-x-2">
+<div class="w-3 h-3 rounded-full bg-red-500/20"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500/20"></div>
+<div class="w-3 h-3 rounded-full bg-green-500/20"></div>
+</div>
+<div class="font-mono text-[10px] text-stone-500 uppercase tracking-widest">Decision Terminal v2.4</div>
+</div>
+<div class="p-8 font-mono text-sm leading-relaxed space-y-4 h-[400px]">
+<div class="text-stone-500 text-xs">READY: MONITORING ERP_STREAM_NORTH_AMERICA</div>
+<div class="flex space-x-3 text-blue-400">
+<span>[AGENT_BACKORDER]</span>
+<span class="text-white">Detected stock-out at Node_CH4. Impact: 42 High-Priority Orders.</span>
+</div>
+<div class="flex space-x-3 text-purple-400">
+<span>[EVALUATING]</span>
+<span class="text-stone-400">Evaluating inter-node transfer vs. factory pull-forward.</span>
+</div>
+<div class="flex space-x-3 text-green-400">
+<span>[DECISION]</span>
+<span class="text-stone-300">Optimal: Transfer 450 units from Hub_W2. (Confidence: 94%)</span>
+</div>
+<div class="flex space-x-3 border-l border-primary pl-4 py-1">
+<span class="text-primary font-bold">[EXECUTING]</span>
+<span class="text-white">ERP Inventory Transfer Request #TR-9921 Submitted.</span>
+</div>
+<div class="animate-pulse text-stone-600">|</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e] mb-6">A Live Operational Decision Surface</h2>
+<p class="text-lg text-on-surface-variant font-sans mb-8">
+                            Monitor, govern, and audit every autonomous decision from a single command center. Gain full visibility into active decisions, agent recommendations, and real-time execution status.
+                        </p>
+<p class="font-display text-2xl italic text-primary mb-10">Every operational decision becomes: visible • explainable • governable • executable</p>
+<button class="decision-gradient text-white px-8 py-4 rounded-md font-sans text-lg font-medium hover:scale-105 transition-transform">
+                            View Platform
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Autonomy & Governance Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-3xl mb-20">
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e] mb-8">Autonomous Where Possible. Human Where Necessary.</h2>
+<p class="text-xl text-on-surface-variant font-sans">
+                        DeciOps doesn't replace planners; it empowers them. By defining confidence thresholds and SLA sensitivity, you control exactly where the system acts autonomously and where it waits for a human signature.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-bold border-b border-primary/20 pb-4 mb-6">Human-in-the-loop</h4>
+<p class="text-sm text-on-surface-variant">Complex escalations requiring strategic intuition are automatically routed to the right human expert with all context pre-loaded.</p>
+</div>
+<div>
+<h4 class="font-bold border-b border-primary/20 pb-4 mb-6">Confidence-based execution</h4>
+<p class="text-sm text-on-surface-variant">Set "Auto-Execute" rules for high-confidence decisions and "Review Required" for outlier events.</p>
+</div>
+<div>
+<h4 class="font-bold border-b border-primary/20 pb-4 mb-6">Decision explainability</h4>
+<p class="text-sm text-on-surface-variant">Every action taken by DeciOps comes with a full log of 'Why'—providing the rationale and data used for auditability.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. Coordination Layer Section -->
+<section class="py-32 bg-[#1a1a2e] text-white">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-5xl font-display font-bold italic mb-8">Coordinated AI Agents for Enterprise Operations</h2>
+<p class="text-xl text-stone-400 max-w-3xl mx-auto font-sans mb-16">
+                    A single agent can't run a supply chain. DeciOps orchestrates a swarm of specialized agents—from backorder resolution to CTP—ensuring they work in concert rather than in conflict.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-2 rounded-full border border-white/20 text-sm font-mono">Backorder Agent</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-sm font-mono">CTP Agent</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-sm font-mono">Inventory Re-balancing Agent</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-sm font-mono">Expedite Logistics Agent</span>
+<span class="px-6 py-2 rounded-full border border-white/20 text-sm font-mono">Order Prioritization Agent</span>
+</div>
+</div>
+</section>
+<!-- 11. Why Now Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-5xl font-display font-bold text-[#1a1a2e] mb-10">The Future of Supply Chains Is Continuous Decision Execution</h2>
+<div class="space-y-8">
+<div class="flex space-x-6">
+<div class="text-stone-300 font-mono text-4xl">01</div>
+<div>
+<h4 class="font-bold mb-2">Beyond Static Planning</h4>
+<p class="text-sm text-on-surface-variant">The era of 'plan then execute' is over. We are entering the era of 'continuously adapt execution'.</p>
+</div>
+</div>
+<div class="flex space-x-6">
+<div class="text-stone-300 font-mono text-4xl">02</div>
+<div>
+<h4 class="font-bold mb-2">Beyond Visibility Dashboards</h4>
+<p class="text-sm text-on-surface-variant">Dashboards tell you where the fire is. DeciOps puts the fire out and re-configures the system to prevent the next one.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="bg-surface-container-low p-12 rounded-2xl border border-outline-variant/10">
+<div class="sovereign-line mb-8"></div>
+<blockquote class="text-3xl font-display italic text-[#1a1a2e] leading-snug">
+                                "In the next decade, the competitive advantage will not go to those with the best data, but to those who can execute decisions at the speed the data is generated."
+                            </blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. Final CTA Section -->
+<section class="py-40 bg-surface-container-low text-center overflow-hidden relative">
+<div class="max-w-4xl mx-auto px-8 relative z-10">
+<h2 class="text-6xl lg:text-7xl font-display font-bold text-[#1a1a2e] mb-12 tracking-tighter italic">
+                    The Next Generation of Supply Chains Will Run on DeciOps
+                </h2>
+<button class="decision-gradient text-white px-12 py-5 rounded-md font-sans text-xl font-medium shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                    Request Demo
+                </button>
+</div>
+<div class="absolute bottom-0 right-0 font-display text-[20rem] font-bold text-on-surface/5 select-none translate-y-1/2 translate-x-1/4">™</div>
+</section>
+</main>
+<!-- 13. Footer -->
+
+</body></html>

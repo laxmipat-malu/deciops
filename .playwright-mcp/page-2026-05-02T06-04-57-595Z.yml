@@ -1,0 +1,221 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "DeciOps™" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Platform" [ref=e9] [cursor=pointer]:
+            - /url: /platform
+        - listitem [ref=e10]:
+          - link "How It Works" [ref=e11] [cursor=pointer]:
+            - /url: /how-it-works
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /use-cases
+        - listitem [ref=e14]:
+          - link "The Missing Layer" [ref=e15] [cursor=pointer]:
+            - /url: /missing-layer
+        - listitem [ref=e16]:
+          - link "Execution Library" [ref=e17] [cursor=pointer]:
+            - /url: /execution-library
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about
+      - link "Request Access" [ref=e20] [cursor=pointer]:
+        - /url: /platform
+  - main [ref=e21]:
+    - iframe [ref=e22]:
+      - main [ref=f4e3]:
+        - generic [ref=f4e5]:
+          - generic [ref=f4e6]:
+            - generic [ref=f4e7]: Case Study // Log-084
+            - heading "Backorder Resolved in Minutes." [level=1] [ref=f4e8]:
+              - text: Backorder
+              - text: Resolved in Minutes.
+            - paragraph [ref=f4e9]: How the Sovereign Engineer platform detected and rectified a critical London/Manchester distribution imbalance before the first customer SLA was breached.
+          - generic [ref=f4e10]:
+            - img [ref=f4e11]
+            - generic [ref=f4e16]: Live Topology Monitor
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]:
+            - heading "01 — Operational Context" [level=2] [ref=f4e20]
+            - generic [ref=f4e21]:
+              - paragraph [ref=f4e22]: Standard ERP systems function on historical snapshots. In the UK corridor, a sudden regional demand spike for critical hardware created a phantom inventory lock.
+              - paragraph [ref=f4e23]: While the London DC showed zero availability, the Manchester hub sat on a dormant surplus that traditional planning cycles wouldn't touch for another 24 hours.
+          - generic [ref=f4e24]:
+            - generic [ref=f4e26]: settings_input_component
+            - heading "Anomaly Profile" [level=3] [ref=f4e27]
+            - generic [ref=f4e28]:
+              - generic [ref=f4e29]:
+                - generic [ref=f4e30]: System Latency
+                - generic [ref=f4e31]: +4.2 hrs
+              - generic [ref=f4e32]:
+                - generic [ref=f4e33]: Planner Oversight
+                - generic [ref=f4e34]: Critical Failure
+              - generic [ref=f4e35]:
+                - generic [ref=f4e36]: Inventory Skew
+                - generic [ref=f4e37]: 68.4%
+        - generic [ref=f4e38]:
+          - heading "02 — Risk Detected" [level=2] [ref=f4e39]
+          - generic [ref=f4e40]:
+            - generic [ref=f4e41]:
+              - generic [ref=f4e42]: monitoring
+              - heading "Fulfillment Confidence" [level=4] [ref=f4e43]
+              - paragraph [ref=f4e44]: DeciOps™ detected a 42% drop in regional fulfillment confidence scores 4 hours before the first order reached the shipping floor.
+              - generic [ref=f4e45]: SIG_ALERT // EARLY_DETECTION
+            - generic [ref=f4e46]:
+              - generic [ref=f4e47]: shopping_cart_checkout
+              - heading "Order Consumption" [level=4] [ref=f4e48]
+              - paragraph [ref=f4e49]: Analysis of order velocity showed that high-priority enterprise SLAs were consuming inventory at 3x the predicted rate.
+              - generic [ref=f4e50]: SIG_ALERT // VELOCITY_SPIKE
+            - generic [ref=f4e51]:
+              - generic [ref=f4e52]: contract
+              - heading "SLA Exposure" [level=4] [ref=f4e53]
+              - paragraph [ref=f4e54]: Identified 12 Tier-1 accounts at immediate risk of breach, calculating the total contractual penalty exposure in real-time.
+              - generic [ref=f4e55]: SIG_ALERT // PENALTY_RISK
+        - generic [ref=f4e57]:
+          - heading "03 — Why Traditional Systems Struggle" [level=2] [ref=f4e58]
+          - generic [ref=f4e59]:
+            - generic [ref=f4e60]:
+              - generic [ref=f4e61]:
+                - generic [ref=f4e62]: "01"
+                - generic [ref=f4e63]:
+                  - heading "Batch Processing Cycles" [level=5] [ref=f4e64]
+                  - paragraph [ref=f4e65]: Legacy ERPs only run inventory reconciliation twice daily. By the time the skew is visible, the SLA is already broken.
+              - generic [ref=f4e66]:
+                - generic [ref=f4e67]: "02"
+                - generic [ref=f4e68]:
+                  - heading "Planner Intervention Requirement" [level=5] [ref=f4e69]
+                  - paragraph [ref=f4e70]: Static rules require human approval for cross-DC transfers, creating a bottleneck during high-velocity periods.
+            - generic [ref=f4e71]:
+              - heading "The DeciOps™ Difference" [level=4] [ref=f4e72]
+              - paragraph [ref=f4e73]: Instead of waiting for a manual trigger, the system autonomously simulations 10k+ reallocation paths simultaneously to find the most cost-effective "Donor DC" in seconds.
+              - generic [ref=f4e76]: CONTINUOUS OPERATIONS
+        - generic [ref=f4e77]:
+          - heading "04 — How DeciOps™ Responded" [level=2] [ref=f4e78]
+          - generic [ref=f4e79]:
+            - generic [ref=f4e80]:
+              - generic [ref=f4e81]:
+                - heading "Step 01" [level=6] [ref=f4e82]
+                - paragraph [ref=f4e83]: Agent Activation
+              - generic [ref=f4e84]:
+                - heading "Step 02" [level=6] [ref=f4e85]
+                - paragraph [ref=f4e86]: Inventory Evaluation
+              - generic [ref=f4e87]:
+                - heading "Step 03" [level=6] [ref=f4e88]
+                - paragraph [ref=f4e89]: Transfer Simulation
+            - generic [ref=f4e90]:
+              - generic [ref=f4e92]: "TRACE_ID: 99x-BP-442"
+              - generic [ref=f4e97]:
+                - heading "Backorder Resolution Agent engaged in Self-Correction mode." [level=3] [ref=f4e98]
+                - paragraph [ref=f4e99]: "The agent initiated a shadow audit of all UK-based nodes. It successfully identified that the Manchester (MCR-1) facility held sufficient safety stock for SKU: 4492-X without compromising its own local fulfillment threshold for the next 72 hours."
+                - generic [ref=f4e100]:
+                  - generic [ref=f4e101]:
+                    - generic [ref=f4e102]: Donor ID
+                    - text: MCR-01
+                  - generic [ref=f4e103]:
+                    - generic [ref=f4e104]: Safety Margin
+                    - text: 114%
+        - generic [ref=f4e106]:
+          - generic [ref=f4e107]:
+            - heading "05 — Decision Executed" [level=2] [ref=f4e108]
+            - 'heading "Total Execution Time: 11 Minutes." [level=3] [ref=f4e109]'
+            - paragraph [ref=f4e110]: From detection to ERP record synchronization, without a single manual keyboard stroke.
+          - generic [ref=f4e111]:
+            - generic [ref=f4e112]:
+              - generic [ref=f4e113]: sync_alt
+              - generic [ref=f4e114]: Dynamic Reallocation Active
+            - generic [ref=f4e115]:
+              - generic [ref=f4e116]: verified
+              - generic [ref=f4e117]: Priorities Updated
+            - generic [ref=f4e118]:
+              - generic [ref=f4e119]: cloud_done
+              - generic [ref=f4e120]: ERP Synchronized
+          - generic:
+            - generic: hub
+        - generic [ref=f4e122]:
+          - generic [ref=f4e123]:
+            - img
+          - generic [ref=f4e124]:
+            - heading "06 — Business Outcome" [level=2] [ref=f4e125]
+            - list [ref=f4e126]:
+              - listitem [ref=f4e127]:
+                - generic [ref=f4e128]:
+                  - generic [ref=f4e129]: verified_user
+                  - generic [ref=f4e130]:
+                    - heading "Tier-1 Account Protection" [level=4] [ref=f4e131]
+                    - paragraph [ref=f4e132]: Zero fallout across top 5% of revenue-generating accounts. Customer satisfaction scores remained at 98% throughout the incident window.
+              - listitem [ref=f4e133]:
+                - generic [ref=f4e134]:
+                  - generic [ref=f4e135]: timer_off
+                  - generic [ref=f4e136]:
+                    - heading "SLA Breach Mitigation" [level=4] [ref=f4e137]
+                    - paragraph [ref=f4e138]: Estimated $1.2M in contractual penalties avoided by rebalancing supply before shipping windows expired.
+              - listitem [ref=f4e139]:
+                - generic [ref=f4e140]:
+                  - generic [ref=f4e141]: stabilization
+                  - generic [ref=f4e142]:
+                    - heading "Queue Stabilization" [level=4] [ref=f4e143]
+                    - paragraph [ref=f4e144]: The fulfillment queue was completely normalized across all hubs within 90 minutes of execution.
+        - generic [ref=f4e145]:
+          - heading "The Takeaway" [level=2] [ref=f4e146]
+          - paragraph [ref=f4e147]: "\"Modern supply chains are too fast for manual loops. The future is Autonomous Decisioning that acts while the ERP is still asleep.\""
+          - generic [ref=f4e150]: DeciOps™ Sovereign Engineering Manifesto
+          - button [ref=f4e152] [cursor=pointer]
+  - contentinfo [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: DeciOps™
+          - paragraph [ref=e28]: Execution layer for supply chains.
+        - generic [ref=e29]:
+          - heading "Company" [level=4] [ref=e30]
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Home" [ref=e33] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e34]:
+              - link "Platform" [ref=e35] [cursor=pointer]:
+                - /url: /platform
+            - listitem [ref=e36]:
+              - link "How It Works" [ref=e37] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=e38]:
+              - link "Use Cases" [ref=e39] [cursor=pointer]:
+                - /url: /use-cases
+            - listitem [ref=e40]:
+              - link "The Missing Layer" [ref=e41] [cursor=pointer]:
+                - /url: /missing-layer
+            - listitem [ref=e42]:
+              - link "Execution Library" [ref=e43] [cursor=pointer]:
+                - /url: /execution-library
+            - listitem [ref=e44]:
+              - link "About" [ref=e45] [cursor=pointer]:
+                - /url: /about
+        - generic [ref=e46]:
+          - heading "Legal" [level=4] [ref=e47]
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Terms of Use" [ref=e50] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=e51]:
+              - link "Privacy Policy" [ref=e52] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e53]:
+              - link "Cookies Policy" [ref=e54] [cursor=pointer]:
+                - /url: /cookies
+        - generic [ref=e55]:
+          - heading "Contact" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - generic [ref=e59]: Address
+              - generic [ref=e60]:
+                - text: 1 Decision Lane
+                - text: New York, NY 10013
+            - listitem [ref=e61]:
+              - link "info@deciops.ai" [ref=e62] [cursor=pointer]:
+                - /url: mailto:info@deciops.ai
+      - generic [ref=e63]:
+        - generic [ref=e64]: DeciOps™ — Execution Layer for Supply Chains
+        - generic [ref=e65]: © 2026 DeciOps. All rights reserved.

@@ -1,0 +1,304 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "DeciOps™" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Platform" [ref=e9] [cursor=pointer]:
+            - /url: /platform
+        - listitem [ref=e10]:
+          - link "How It Works" [ref=e11] [cursor=pointer]:
+            - /url: /how-it-works
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /use-cases
+        - listitem [ref=e14]:
+          - link "The Missing Layer" [ref=e15] [cursor=pointer]:
+            - /url: /missing-layer
+        - listitem [ref=e16]:
+          - link "Execution Library" [ref=e17] [cursor=pointer]:
+            - /url: /execution-library
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about
+      - link "Request Access" [ref=e20] [cursor=pointer]:
+        - /url: /platform
+  - main [ref=e21]:
+    - iframe [ref=e22]:
+      - main [ref=f3e3]:
+        - generic [ref=f3e5]:
+          - generic [ref=f3e6]:
+            - generic [ref=f3e7]: Supply Chain Execution Layer
+            - heading "The Decision Operating System for Adaptive Supply Chains" [level=1] [ref=f3e8]
+            - paragraph [ref=f3e9]: DeciOps continuously senses operational disruptions, orchestrates supply chain decisions, and executes actions across enterprise systems in real time. Modern supply chains can no longer rely on static workflows, delayed escalations, and manual coordination. DeciOps enables enterprises to move from operational visibility to continuous decision execution.
+            - generic [ref=f3e10]:
+              - button "Request Demo" [ref=f3e11] [cursor=pointer]
+              - button "Explore Platform" [ref=f3e12] [cursor=pointer]
+          - generic [ref=f3e18]:
+            - generic [ref=f3e19]:
+              - generic [ref=f3e20]: sensors
+              - generic [ref=f3e21]: Sense
+            - generic [ref=f3e22]:
+              - generic [ref=f3e23]: psychology
+              - generic [ref=f3e24]: Evaluate
+            - generic [ref=f3e25]:
+              - generic [ref=f3e26]: balance
+              - generic [ref=f3e27]: Decide
+            - generic [ref=f3e28]:
+              - generic [ref=f3e29]: bolt
+              - generic [ref=f3e30]: Execute
+        - generic [ref=f3e32]:
+          - heading "Built for Real-Time Supply Chain Execution" [level=2] [ref=f3e34]
+          - generic [ref=f3e36]:
+            - generic [ref=f3e37]:
+              - heading "Reduce Operational Decision Latency" [level=3] [ref=f3e38]
+              - paragraph [ref=f3e39]: Eliminate the lag between signal detection and system execution with automated logic pathways.
+            - generic [ref=f3e40]:
+              - heading "Improve Fill Rates & SLA Adherence" [level=3] [ref=f3e41]
+              - paragraph [ref=f3e42]: Dynamic re-routing and inventory re-balancing to meet customer commitments without manual intervention.
+            - generic [ref=f3e43]:
+              - heading "Reduce Planner Overload" [level=3] [ref=f3e44]
+              - paragraph [ref=f3e45]: Offload repetitive operational micro-decisions to DeciOps agents, allowing humans to focus on strategy.
+            - generic [ref=f3e46]:
+              - heading "Increase Execution Velocity" [level=3] [ref=f3e47]
+              - paragraph [ref=f3e48]: Move from weekly planning cycles to continuous operational adjustments that hit the ERP in seconds.
+            - generic [ref=f3e49]:
+              - heading "Improve Supply Chain Resilience" [level=3] [ref=f3e50]
+              - paragraph [ref=f3e51]: Autonomous response to disruptions ensures the network remains fluid even during high volatility events.
+            - generic [ref=f3e52]:
+              - heading "Govern Operational Autonomy" [level=3] [ref=f3e53]
+              - paragraph [ref=f3e54]: Full explainability and control thresholds ensure every automated decision aligns with corporate policy.
+        - generic [ref=f3e56]:
+          - generic [ref=f3e57]:
+            - heading "Supply Chains Have Become Adaptive" [level=2] [ref=f3e58]
+            - paragraph [ref=f3e59]: In an era of global volatility and instant customer expectations, the static nature of enterprise systems has become a bottleneck. Traditional architectures were designed for stable transactions and batch planning.
+            - paragraph [ref=f3e60]: "Today, operational teams are overwhelmed by factors they can't control: cascading backorders, inventory conflicts, fulfillment delays, and fragmented vendor responses. Visibility isn't enough; continuous decision execution is the new requirement."
+          - generic [ref=f3e61]:
+            - heading "Overwhelm Factors" [level=4] [ref=f3e62]
+            - list [ref=f3e63]:
+              - listitem [ref=f3e64]:
+                - generic [ref=f3e66]: Chronic Backorder Spirals
+              - listitem [ref=f3e67]:
+                - generic [ref=f3e69]: Multi-Node Inventory Conflicts
+              - listitem [ref=f3e70]:
+                - generic [ref=f3e72]: Last-Mile Fulfillment Delays
+              - listitem [ref=f3e73]:
+                - generic [ref=f3e75]: Siloed Logistics Coordination
+        - generic [ref=f3e76]:
+          - heading "Enterprise Systems Have a Gap" [level=2] [ref=f3e78]
+          - generic [ref=f3e80]:
+            - generic [ref=f3e81]:
+              - generic [ref=f3e82]: ERP
+              - generic [ref=f3e83]: Static System of Record & Transactions
+            - generic [ref=f3e85]: south
+            - generic [ref=f3e86]:
+              - generic [ref=f3e87]: Planning (APS)
+              - generic [ref=f3e88]: Forecasts & Mid-to-Long Term Optimization
+            - generic [ref=f3e90]: south
+            - generic [ref=f3e91]:
+              - generic [ref=f3e92]: Control Towers
+              - generic [ref=f3e93]: Visibility & Alerting (What happened?)
+            - generic [ref=f3e95]: south
+            - generic [ref=f3e96]:
+              - generic [ref=f3e97]: Decision Intelligence
+              - generic [ref=f3e98]: Recommendations (What should we do?)
+            - generic [ref=f3e100]: south
+            - generic [ref=f3e101]:
+              - generic [ref=f3e102]: DeciOps
+              - generic [ref=f3e103]: Operational Decision Execution (Just do it.)
+        - generic [ref=f3e106]:
+          - generic [ref=f3e107]:
+            - heading "Every Operational Decision Has Business Impact" [level=2] [ref=f3e108]
+            - paragraph [ref=f3e109]: A single delayed transfer or an unoptimized inventory allocation ripples across the entire P&L. DeciOps continuously evaluates operational trade-offs in real time to protect service levels, revenue, and execution performance.
+          - generic [ref=f3e110]:
+            - generic [ref=f3e111]:
+              - heading "Customer Commitments" [level=4] [ref=f3e112]
+              - paragraph [ref=f3e113]: Protecting brand reputation through delivery reliability.
+            - generic [ref=f3e114]:
+              - heading "Revenue Realization" [level=4] [ref=f3e115]
+              - paragraph [ref=f3e116]: Capturing demand by ensuring product availability.
+            - generic [ref=f3e117]:
+              - heading "Production Schedules" [level=4] [ref=f3e118]
+              - paragraph [ref=f3e119]: Preventing factory downtime with adaptive material flow.
+            - generic [ref=f3e120]:
+              - heading "Inventory Efficiency" [level=4] [ref=f3e121]
+              - paragraph [ref=f3e122]: Reducing working capital locked in the wrong nodes.
+        - generic [ref=f3e124]:
+          - generic [ref=f3e125]:
+            - heading "Decisions Become Executable Operations" [level=2] [ref=f3e126]
+            - paragraph [ref=f3e127]: We bridge the gap between "knowing what to do" and "actually doing it" within your existing systems of record.
+          - generic [ref=f3e128]:
+            - generic [ref=f3e129]:
+              - generic [ref=f3e130]: Core Capabilities
+              - list [ref=f3e131]:
+                - listitem [ref=f3e132]:
+                  - generic [ref=f3e133]: search
+                  - generic [ref=f3e134]: Detect Disruptions
+                - listitem [ref=f3e135]:
+                  - generic [ref=f3e136]: insights
+                  - generic [ref=f3e137]: Evaluate Trade-offs
+                - listitem [ref=f3e138]:
+                  - generic [ref=f3e139]: hub
+                  - generic [ref=f3e140]: Coordinate Workflows
+                - listitem [ref=f3e141]:
+                  - generic [ref=f3e142]: shield
+                  - generic [ref=f3e143]: Govern Autonomy
+            - generic [ref=f3e144]:
+              - generic [ref=f3e145]:
+                - heading "Backorder Resolution" [level=4] [ref=f3e146]
+                - paragraph [ref=f3e147]: Automated prioritization and allocation to clear order backlogs based on customer tiers.
+              - generic [ref=f3e148]:
+                - heading "Capable-to-Promise (CTP)" [level=4] [ref=f3e149]
+                - paragraph [ref=f3e150]: Real-time commitment calculation that accounts for material and capacity constraints.
+              - generic [ref=f3e151]:
+                - heading "Inventory Allocation" [level=4] [ref=f3e152]
+                - paragraph [ref=f3e153]: Intelligent re-balancing of stock across regional hubs to meet shifting demand signals.
+              - generic [ref=f3e154]:
+                - heading "ERP Write-Back" [level=4] [ref=f3e155]
+                - paragraph [ref=f3e156]: Direct execution of decisions by writing back to SAP, Oracle, or Microsoft Dynamics.
+        - generic [ref=f3e158]:
+          - heading "How DeciOps Works" [level=2] [ref=f3e160]
+          - generic [ref=f3e161]:
+            - generic [ref=f3e162]:
+              - generic [ref=f3e164]: radar
+              - heading "Sense" [level=4] [ref=f3e165]
+              - paragraph [ref=f3e166]: Continuous monitoring of signals across ERP, TMS, and external data.
+            - generic [ref=f3e167]:
+              - generic [ref=f3e169]: model_training
+              - heading "Evaluate" [level=4] [ref=f3e170]
+              - paragraph [ref=f3e171]: Simulating scenarios and trade-offs using specialized AI agents.
+            - generic [ref=f3e172]:
+              - generic [ref=f3e174]: gavel
+              - heading "Decide" [level=4] [ref=f3e175]
+              - paragraph [ref=f3e176]: Selection of the optimal action based on business policies and confidence.
+            - generic [ref=f3e177]:
+              - generic [ref=f3e179]: bolt
+              - heading "Execute" [level=4] [ref=f3e180]
+              - paragraph [ref=f3e181]: Direct write-back to enterprise systems to operationalize the decision.
+            - generic [ref=f3e182]:
+              - generic [ref=f3e184]: auto_graph
+              - heading "Learn" [level=4] [ref=f3e185]
+              - paragraph [ref=f3e186]: Capturing outcomes to continuously refine the decision logic over time.
+        - generic [ref=f3e189]:
+          - generic [ref=f3e190]:
+            - generic [ref=f3e196]: Decision Terminal v2.4
+            - generic [ref=f3e197]:
+              - generic [ref=f3e198]: "READY: MONITORING ERP_STREAM_NORTH_AMERICA"
+              - generic [ref=f3e199]:
+                - generic [ref=f3e200]: "[AGENT_BACKORDER]"
+                - generic [ref=f3e201]: "Detected stock-out at Node_CH4. Impact: 42 High-Priority Orders."
+              - generic [ref=f3e202]:
+                - generic [ref=f3e203]: "[EVALUATING]"
+                - generic [ref=f3e204]: Evaluating inter-node transfer vs. factory pull-forward.
+              - generic [ref=f3e205]:
+                - generic [ref=f3e206]: "[DECISION]"
+                - generic [ref=f3e207]: "Optimal: Transfer 450 units from Hub_W2. (Confidence: 94%)"
+              - generic [ref=f3e208]:
+                - generic [ref=f3e209]: "[EXECUTING]"
+                - generic [ref=f3e210]: "ERP Inventory Transfer Request #TR-9921 Submitted."
+              - generic [ref=f3e211]: "|"
+          - generic [ref=f3e212]:
+            - heading "A Live Operational Decision Surface" [level=2] [ref=f3e213]
+            - paragraph [ref=f3e214]: Monitor, govern, and audit every autonomous decision from a single command center. Gain full visibility into active decisions, agent recommendations, and real-time execution status.
+            - paragraph [ref=f3e215]: "Every operational decision becomes: visible • explainable • governable • executable"
+            - button "View Platform" [ref=f3e216] [cursor=pointer]
+        - generic [ref=f3e218]:
+          - generic [ref=f3e219]:
+            - heading "Autonomous Where Possible. Human Where Necessary." [level=2] [ref=f3e220]
+            - paragraph [ref=f3e221]: DeciOps doesn't replace planners; it empowers them. By defining confidence thresholds and SLA sensitivity, you control exactly where the system acts autonomously and where it waits for a human signature.
+          - generic [ref=f3e222]:
+            - generic [ref=f3e223]:
+              - heading "Human-in-the-loop" [level=4] [ref=f3e224]
+              - paragraph [ref=f3e225]: Complex escalations requiring strategic intuition are automatically routed to the right human expert with all context pre-loaded.
+            - generic [ref=f3e226]:
+              - heading "Confidence-based execution" [level=4] [ref=f3e227]
+              - paragraph [ref=f3e228]: Set "Auto-Execute" rules for high-confidence decisions and "Review Required" for outlier events.
+            - generic [ref=f3e229]:
+              - heading "Decision explainability" [level=4] [ref=f3e230]
+              - paragraph [ref=f3e231]: Every action taken by DeciOps comes with a full log of 'Why'—providing the rationale and data used for auditability.
+        - generic [ref=f3e233]:
+          - heading "Coordinated AI Agents for Enterprise Operations" [level=2] [ref=f3e234]
+          - paragraph [ref=f3e235]: A single agent can't run a supply chain. DeciOps orchestrates a swarm of specialized agents—from backorder resolution to CTP—ensuring they work in concert rather than in conflict.
+          - generic [ref=f3e236]:
+            - generic [ref=f3e237]: Backorder Agent
+            - generic [ref=f3e238]: CTP Agent
+            - generic [ref=f3e239]: Inventory Re-balancing Agent
+            - generic [ref=f3e240]: Expedite Logistics Agent
+            - generic [ref=f3e241]: Order Prioritization Agent
+        - generic [ref=f3e244]:
+          - generic [ref=f3e245]:
+            - heading "The Future of Supply Chains Is Continuous Decision Execution" [level=2] [ref=f3e246]
+            - generic [ref=f3e247]:
+              - generic [ref=f3e248]:
+                - generic [ref=f3e249]: "01"
+                - generic [ref=f3e250]:
+                  - heading "Beyond Static Planning" [level=4] [ref=f3e251]
+                  - paragraph [ref=f3e252]: The era of 'plan then execute' is over. We are entering the era of 'continuously adapt execution'.
+              - generic [ref=f3e253]:
+                - generic [ref=f3e254]: "02"
+                - generic [ref=f3e255]:
+                  - heading "Beyond Visibility Dashboards" [level=4] [ref=f3e256]
+                  - paragraph [ref=f3e257]: Dashboards tell you where the fire is. DeciOps puts the fire out and re-configures the system to prevent the next one.
+          - blockquote [ref=f3e261]: "\"In the next decade, the competitive advantage will not go to those with the best data, but to those who can execute decisions at the speed the data is generated.\""
+        - generic [ref=f3e262]:
+          - generic [ref=f3e263]:
+            - heading "The Next Generation of Supply Chains Will Run on DeciOps" [level=2] [ref=f3e264]
+            - button "Request Demo" [ref=f3e265] [cursor=pointer]
+          - generic [ref=f3e266]: ™
+  - contentinfo [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: DeciOps™
+          - paragraph [ref=e28]: Execution layer for supply chains.
+        - generic [ref=e29]:
+          - heading "Company" [level=4] [ref=e30]
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Home" [ref=e33] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e34]:
+              - link "Platform" [ref=e35] [cursor=pointer]:
+                - /url: /platform
+            - listitem [ref=e36]:
+              - link "How It Works" [ref=e37] [cursor=pointer]:
+                - /url: /how-it-works
+            - listitem [ref=e38]:
+              - link "Use Cases" [ref=e39] [cursor=pointer]:
+                - /url: /use-cases
+            - listitem [ref=e40]:
+              - link "The Missing Layer" [ref=e41] [cursor=pointer]:
+                - /url: /missing-layer
+            - listitem [ref=e42]:
+              - link "Execution Library" [ref=e43] [cursor=pointer]:
+                - /url: /execution-library
+            - listitem [ref=e44]:
+              - link "About" [ref=e45] [cursor=pointer]:
+                - /url: /about
+        - generic [ref=e46]:
+          - heading "Legal" [level=4] [ref=e47]
+          - list [ref=e48]:
+            - listitem [ref=e49]:
+              - link "Terms of Use" [ref=e50] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=e51]:
+              - link "Privacy Policy" [ref=e52] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e53]:
+              - link "Cookies Policy" [ref=e54] [cursor=pointer]:
+                - /url: /cookies
+        - generic [ref=e55]:
+          - heading "Contact" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - generic [ref=e59]: Address
+              - generic [ref=e60]:
+                - text: 1 Decision Lane
+                - text: New York, NY 10013
+            - listitem [ref=e61]:
+              - link "info@deciops.ai" [ref=e62] [cursor=pointer]:
+                - /url: mailto:info@deciops.ai
+      - generic [ref=e63]:
+        - generic [ref=e64]: DeciOps™ — Execution Layer for Supply Chains
+        - generic [ref=e65]: © 2026 DeciOps. All rights reserved.

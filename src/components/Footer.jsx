@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 
 const company = [
+  { to: '/', label: 'Home' },
   { to: '/platform', label: 'Platform' },
   { to: '/how-it-works', label: 'How It Works' },
   { to: '/use-cases', label: 'Use Cases' },
   { to: '/missing-layer', label: 'The Missing Layer' },
   { to: '/execution-library', label: 'Execution Library' },
+  { to: '/about', label: 'About' },
 ];
 
 const legal = [

@@ -4,16 +4,7 @@ const path = require('path');
 const SRC_DIR = path.resolve(__dirname, '../../stitch-html');
 const OUT_DIR = path.resolve(__dirname, '../public/pages');
 
-const files = [
-  'platform.html',
-  'how-it-works.html',
-  'use-cases.html',
-  'missing-layer.html',
-  'execution-library.html',
-  'terms.html',
-  'privacy.html',
-  'cookies.html',
-];
+const files = fs.readdirSync(SRC_DIR).filter((f) => f.endsWith('.html'));
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -31,6 +22,13 @@ for (const file of files) {
       html = html.slice(0, footerOpen) + html.slice(footerClose + '</footer>'.length);
     }
   }
+
+  // Replace viewport-height utilities (vh) with px equivalents so iframe doesn't
+  // feedback-loop with PageFrame auto-resize. Reference viewport ~900px.
+  html = html.replace(/\[(\d+(?:\.\d+)?)vh\]/g, (_, n) => `[${Math.round(parseFloat(n) * 9)}px]`);
+  html = html.replace(/\bmin-h-screen\b/g, 'min-h-[900px]');
+  html = html.replace(/\bh-screen\b/g, 'h-[900px]');
+  html = html.replace(/\bmax-h-screen\b/g, 'max-h-[900px]');
 
   // Add top padding so body content not hidden behind our React fixed nav
   html = html.replace(

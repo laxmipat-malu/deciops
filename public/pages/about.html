@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@300;400;500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ffb4a4",
+                    "surface-container": "#1e2024",
+                    "surface-tint": "#ffb4a4",
+                    "surface-bright": "#37393e",
+                    "on-primary-fixed": "#3e0500",
+                    "outline-variant": "#58413d",
+                    "on-surface-variant": "#dfbfb9",
+                    "on-background": "#e2e2e8",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#003736",
+                    "surface-dim": "#111317",
+                    "on-secondary-fixed": "#370d05",
+                    "on-primary": "#640d00",
+                    "secondary-fixed": "#ffdad3",
+                    "surface": "#111317",
+                    "tertiary-container": "#0da19f",
+                    "on-secondary-fixed-variant": "#6e372b",
+                    "on-secondary": "#522117",
+                    "on-surface": "#e2e2e8",
+                    "on-secondary-container": "#f2a595",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#00504f",
+                    "on-tertiary-container": "#002f2f",
+                    "background": "#111317",
+                    "secondary-fixed-dim": "#ffb4a4",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#ffb4a4",
+                    "on-primary-container": "#580a00",
+                    "surface-container-low": "#1a1c20",
+                    "surface-container-high": "#282a2e",
+                    "tertiary-fixed-dim": "#61d8d6",
+                    "surface-variant": "#333539",
+                    "surface-container-lowest": "#0c0e12",
+                    "on-error": "#690005",
+                    "outline": "#a78a84",
+                    "primary-container": "#ec684c",
+                    "inverse-surface": "#e2e2e8",
+                    "tertiary-fixed": "#80f5f2",
+                    "tertiary": "#61d8d6",
+                    "on-tertiary-fixed": "#00201f",
+                    "on-primary-fixed-variant": "#88200b",
+                    "secondary-container": "#71392d",
+                    "inverse-on-surface": "#2f3035",
+                    "surface-container-highest": "#333539",
+                    "inverse-primary": "#a93721",
+                    "primary-fixed": "#ffdad3",
+                    "primary-fixed-dim": "#ffb4a4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "display": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"],
+                    "mono": ["JetBrains Mono", "monospace"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-line {
+            height: 1px;
+            background: linear-gradient(90deg, rgba(232, 101, 74, 0.4) 0%, rgba(232, 101, 74, 0) 100%);
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+        }
+        @media (max-width: 768px) {
+            .asymmetric-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white"><div style="height:72px"></div>
+<!-- TopNavBar -->
+
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 py-24 md:py-40 max-w-[1920px] mx-auto asymmetric-grid items-center gap-16">
+<div>
+<span class="font-mono text-xs tracking-[0.2em] text-primary uppercase mb-6 block">01 / Introduction</span>
+<h1 class="font-display italic text-5xl md:text-8xl text-white leading-[1.1] mb-12 tracking-tight">
+                    Building the Operational <br/>
+<span class="text-primary-container">Decision Layer</span> for <br/>
+                    Adaptive Supply Chains
+                </h1>
+<div class="max-w-2xl space-y-8">
+<p class="text-xl md:text-2xl font-light leading-relaxed text-on-surface-variant">
+                        Supply chains were never designed to operate at today’s speed, volatility, and decision density. Global disruptions, fragmented demand, supply shortages, and rising customer expectations are generating more operational decisions than humans, workflows, and legacy enterprise systems can manage effectively.
+                    </p>
+<div class="editorial-line w-24"></div>
+<p class="text-lg leading-relaxed text-gray-400">
+                        Yet most enterprise supply chain systems still operate in disconnected layers: ERP systems manage transactions, Planning systems generate forecasts, Control towers provide visibility, and Decision Intelligence platforms recommend actions.
+                    </p>
+<p class="text-2xl font-display text-white italic">
+                        But enterprises still lack a continuous operational decision execution layer. That is why DeciOps exists.
+                    </p>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface via-transparent to-transparent z-10"></div>
+<img class="w-full aspect-[4/5] object-cover grayscale opacity-40 rounded-xl" data-alt="abstract tech schematic with glowing orange lines on a dark architectural background, minimal aesthetic, high precision engineering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz8PnI8OiOyEwYb7val9P-nOHoaATrwbXj0leepbDgUxisIweKcK2xLAbsaKOMk2VwnRUh2t-krQdsIbYVjf3PdBSnSmhA-59TE8n3_rr_paUJzjXagiQho4wBADPc5ZEASSUabpM5hSLx05n3KqFsQYZFE5gXL-SJHKYPCqRzFhX_r3UQ1t9lqQsWoSjqOfbQto2xqTmIQk6D_EcuiHNkeqFa1iJHHBy9558tCfSnl-cFhTL-rWOUM5WFIM2DVcYZxlwN08wiL_o"/>
+<div class="absolute top-0 right-0 p-8 border-r border-t border-primary/20 w-32 h-32"></div>
+</div>
+</section>
+<!-- Mission Section -->
+<section class="bg-surface-container-low py-32">
+<div class="px-6 md:px-12 max-w-[1920px] mx-auto">
+<div class="mb-24">
+<span class="font-mono text-xs tracking-[0.2em] text-tertiary uppercase mb-6 block">02 / Purpose</span>
+<h2 class="font-display text-4xl md:text-6xl text-white italic mb-12">Our Mission</h2>
+<div class="bg-surface-container p-12 md:p-20 rounded-xl border-l-4 border-primary-container">
+<p class="font-display text-3xl md:text-5xl leading-tight text-white mb-8">
+                            "At DeciOps, our mission is to help enterprises operate adaptive supply chains through continuous operational decision execution."
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface p-8 rounded-lg hover:bg-surface-container transition-colors duration-500 group">
+<span class="material-symbols-outlined text-primary mb-6 group-hover:scale-110 transition-transform">sensors</span>
+<h4 class="font-mono text-sm uppercase tracking-widest text-white mb-4">Sensing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sensing operational disruptions in real time across the global network.</p>
+</div>
+<div class="bg-surface p-8 rounded-lg hover:bg-surface-container transition-colors duration-500 group">
+<span class="material-symbols-outlined text-primary mb-6 group-hover:scale-110 transition-transform">account_tree</span>
+<h4 class="font-mono text-sm uppercase tracking-widest text-white mb-4">Coordinating</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Coordinating decisions across complex constraints and competing priorities.</p>
+</div>
+<div class="bg-surface p-8 rounded-lg hover:bg-surface-container transition-colors duration-500 group">
+<span class="material-symbols-outlined text-primary mb-6 group-hover:scale-110 transition-transform">gavel</span>
+<h4 class="font-mono text-sm uppercase tracking-widest text-white mb-4">Governing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Governing operational autonomy with human-in-the-loop oversight.</p>
+</div>
+<div class="bg-surface p-8 rounded-lg hover:bg-surface-container transition-colors duration-500 group">
+<span class="material-symbols-outlined text-primary mb-6 group-hover:scale-110 transition-transform">bolt</span>
+<h4 class="font-mono text-sm uppercase tracking-widest text-white mb-4">Executing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Executing actions directly across enterprise legacy and cloud systems.</p>
+</div>
+</div>
+<div class="mt-16 text-right font-display italic text-gray-500 text-xl">
+                    —not simply surfacing dashboards and recommendations after disruptions occur.
+                </div>
+</div>
+</section>
+<!-- The Manifesto Section -->
+<section class="px-6 md:px-12 py-32 max-w-[1920px] mx-auto">
+<span class="font-mono text-xs tracking-[0.2em] text-primary uppercase mb-12 block">03 / The Manifesto</span>
+<div class="space-y-32">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row gap-12 md:items-end border-b border-white/5 pb-16">
+<h3 class="font-display text-4xl md:text-5xl text-white italic md:w-1/2">Supply chains should continuously adapt.</h3>
+<p class="text-on-surface-variant md:w-1/2 text-lg">Operational environments change faster than static workflows and planning cycles can respond. Real-time adaptation is the only survival strategy.</p>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row gap-12 md:items-end border-b border-white/5 pb-16">
+<h3 class="font-display text-4xl md:text-5xl text-white italic md:w-1/2">Decisions should become executable operations.</h3>
+<p class="text-on-surface-variant md:w-1/2 text-lg">Operational intelligence only creates value when decisions can be coordinated and executed in real time. Insight without action is just overhead.</p>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row gap-12 md:items-end border-b border-white/5 pb-16">
+<h3 class="font-display text-4xl md:text-5xl text-white italic md:w-1/2">AI should augment operational teams — not replace them.</h3>
+<p class="text-on-surface-variant md:w-1/2 text-lg">Machines should absorb operational complexity and repetitive coordination. Humans should govern strategy, exceptions, and enterprise priorities.</p>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col md:flex-row gap-12 md:items-end border-b border-white/5 pb-16">
+<h3 class="font-display text-4xl md:text-5xl text-white italic md:w-1/2">Operational autonomy requires governance.</h3>
+<p class="text-on-surface-variant md:w-1/2 text-lg">Execution without explainability, confidence controls, and human oversight creates operational risk. Trust is built through verification.</p>
+</div>
+<!-- Item 5 -->
+<div class="flex flex-col md:flex-row gap-12 md:items-end">
+<h3 class="font-display text-4xl md:text-5xl text-white italic md:w-1/2">Enterprise systems must evolve from visibility to execution.</h3>
+<p class="text-on-surface-variant md:w-1/2 text-lg">The future of supply chains will be defined not by who sees disruptions first — but by who executes operational decisions fastest and most coherently.</p>
+</div>
+</div>
+</section>
+<!-- Platform Section -->
+<section class="bg-surface-container py-32 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover grayscale" data-alt="macro photograph of server processor architecture with intricate pathways and light patterns, blue and orange tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArfLOFDg_AX7CtB_vpQKma9gobwDLWj4ODoFz8iqVnpn5ug4ZPiLXZ6KaImO4XLrPymirHRhUkWwhfVq4rs5fNHHfpaKjBB8xzDS2uGsb_ted46bc9kywhfFl0M8eEYRr4etZiDYcRTfRrx7ajRm2QXg4GTis45NGGwj-IAMR31AbOb_qlYuX8Xob5R2BtqlqKKh7dkYGYxqD05UTwxH9lThdfYaq8znW8t7L_KpaWeuR2s9yvTSk1dHnwzOWdQi55E3Ib2RTNoJE"/>
+</div>
+<div class="px-6 md:px-12 max-w-[1920px] mx-auto relative z-10">
+<div class="asymmetric-grid gap-20 items-center">
+<div>
+<span class="font-mono text-xs tracking-[0.2em] text-tertiary uppercase mb-6 block">04 / Platform Logic</span>
+<h2 class="font-display text-4xl md:text-6xl text-white italic mb-12">What DeciOps Does</h2>
+<p class="text-2xl leading-relaxed text-on-surface-variant mb-12">
+                            DeciOps transforms operational decisions into continuously executable actions. The platform coordinates: AI-driven operational agents, enterprise policies, supply constraints, inventory conditions, fulfillment priorities, escalation workflows, and ERP execution systems to continuously orchestrate adaptive supply chain operations in real time.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-surface-container-high rounded text-xs font-mono text-tertiary tracking-tighter">AGENT_ORCHESTRATION</span>
+<span class="px-4 py-2 bg-surface-container-high rounded text-xs font-mono text-tertiary tracking-tighter">POLICY_GOVERNANCE</span>
+<span class="px-4 py-2 bg-surface-container-high rounded text-xs font-mono text-tertiary tracking-tighter">ERP_EXECUTION</span>
+<span class="px-4 py-2 bg-surface-container-high rounded text-xs font-mono text-tertiary tracking-tighter">REAL_TIME_ADAPTATION</span>
+</div>
+</div>
+<div class="hidden lg:block bg-surface/50 backdrop-blur-xl p-12 rounded-2xl border border-white/5">
+<div class="space-y-6 font-mono text-[10px] text-gray-500 uppercase tracking-widest">
+<div class="flex justify-between items-center border-b border-white/5 pb-2">
+<span>Input_Signal</span>
+<span class="text-primary-container">Disruption Detected</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/5 pb-2">
+<span>Constraint_Check</span>
+<span class="text-tertiary">Inventory Locked</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/5 pb-2">
+<span>Policy_Verification</span>
+<span class="text-tertiary">Priority A10</span>
+</div>
+<div class="flex justify-between items-center border-b border-white/5 pb-2">
+<span>Decision_Matrix</span>
+<span class="text-primary-container">Reroute fulfillment</span>
+</div>
+<div class="flex justify-between items-center pt-4">
+<span class="text-white">Execution_Status</span>
+<span class="text-primary">COMPLETED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Vision Section -->
+<section class="px-6 md:px-12 py-40 max-w-[1920px] mx-auto text-center">
+<span class="font-mono text-xs tracking-[0.2em] text-primary uppercase mb-12 block">05 / The Vision</span>
+<div class="max-w-4xl mx-auto">
+<p class="font-display text-4xl md:text-7xl italic text-white leading-tight mb-16">
+                    We believe the next generation of enterprises will operate through continuous operational decision systems — where supply chains sense, evaluate, decide, execute, and learn dynamically.
+                </p>
+<p class="text-2xl text-on-surface-variant font-light mb-24">
+                    DeciOps is building the Decision Operating System that enables that future.
+                </p>
+<div class="editorial-line w-full mb-12"></div>
+<div class="text-center space-y-12 w-full">
+<h2 class="font-display text-4xl md:text-6xl italic text-white leading-tight mb-6">
+        Ready to Build the Future Together?
+    </h2>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light max-w-3xl mx-auto">
+        We're looking for visionary engineers, analysts, and innovators to join our mission in bringing Adaptive supply Chains to organizations
+    </p>
+<div class="pt-4">
+<button class="bg-white text-surface px-12 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-on-primary-container transition-all">
+            Join the Team
+        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+</body></html>
