@@ -37,7 +37,7 @@ export default function JoinTheTeam() {
             };
 
             try {
-                await fetch('https://script.google.com/macros/s/AKfycbzyd92F50ge6heVT2jvz5ggv_mALpRutjo1LKUsSVPCRM37fvtbxyOQJ2_xNBoXbz7Ojg/exec', {
+                await fetch('https://script.google.com/macros/s/AKfycbz93kCZSzxMEXcAR-1OL8cePEAD_M0WHO-I38UjV9oWtw0zCLiGCtN0-RVkBUPrCPC0Eg/exec', {
                     method: 'POST',
                     mode: 'no-cors',
                     body: JSON.stringify(data),
