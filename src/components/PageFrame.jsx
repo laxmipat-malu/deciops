@@ -2,28 +2,53 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function PageFrame({ src, title }) {
   const ref = useRef(null);
-  const [height, setHeight] = useState(2400);
+  const [height, setHeight] = useState(800);
 
   const resize = () => {
     const f = ref.current;
     if (!f) return;
     try {
       const doc = f.contentDocument;
-      if (!doc) return;
-      const h = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body?.scrollHeight || 0
+      const body = doc?.body;
+      if (!doc || !body) return;
+      const contentElement = doc.querySelector('main') || [...body.children].reverse().find(
+        (element) => element.getBoundingClientRect().height > 0
       );
-      if (h > 100) setHeight(h);
+      const contentBottom = contentElement
+        ? contentElement.getBoundingClientRect().bottom
+        : body.getBoundingClientRect().bottom;
+      const nextHeight = Math.ceil(Math.max(contentBottom, 100));
+      setHeight(nextHeight);
     } catch (e) {
-      // cross-origin — should not happen for same-origin /pages/
+      // Same-origin /pages/ should be readable, but keep the frame stable if not.
     }
   };
 
   useEffect(() => {
-    const id = setInterval(resize, 600);
-    return () => clearInterval(id);
-  }, []);
+    setHeight(800);
+  }, [src]);
+
+  useEffect(() => {
+    const f = ref.current;
+    let observer;
+    const attachObserver = () => {
+      try {
+        const body = f?.contentDocument?.body;
+        if (!body || !window.ResizeObserver) return;
+        observer = new ResizeObserver(resize);
+        observer.observe(body);
+      } catch (e) {
+        // Ignore observer setup issues; interval/onLoad still resize the frame.
+      }
+    };
+
+    const id = setInterval(resize, 300);
+    attachObserver();
+    return () => {
+      clearInterval(id);
+      observer?.disconnect();
+    };
+  }, [src]);
 
   return (
     <iframe

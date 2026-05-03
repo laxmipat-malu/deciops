@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Team | DeciOps</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, sans-serif; background: #111317; color: #e2e2e8; }
+    .font-display { font-family: Newsreader, serif; }
+  </style>
+</head>
+<body>
+  <main class="mx-auto grid max-w-7xl gap-12 px-8 py-24 lg:grid-cols-[0.95fr_1.05fr]">
+    <section>
+      <p class="text-sm font-extrabold uppercase tracking-[0.3em] text-[#ffb4a4]">Join the Team</p>
+      <h1 class="mt-5 font-display text-6xl font-bold leading-tight md:text-7xl">Build decision execution systems with us.</h1>
+      <p class="mt-8 max-w-xl text-xl leading-relaxed text-[#dfbfb9]">
+        Share your details and resume. Your submission will open an email to info@deciops.ai so our team can review it.
+      </p>
+    </section>
+    <section class="bg-white p-8 text-[#1a1c1b] shadow-xl md:p-10">
+      <form action="mailto:info@deciops.ai" method="post" enctype="multipart/form-data" class="space-y-6">
+        <div class="grid gap-6 md:grid-cols-2">
+          <label class="block">
+            <span class="text-sm font-bold text-stone-700">First name</span>
+            <input name="First name" required minlength="2" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="text">
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold text-stone-700">Last name</span>
+            <input name="Last name" required minlength="2" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="text">
+          </label>
+        </div>
+        <label class="block">
+          <span class="text-sm font-bold text-stone-700">Email</span>
+          <input name="Email" required class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="email">
+        </label>
+        <label class="block">
+          <span class="text-sm font-bold text-stone-700">Role interested in</span>
+          <input name="Role interested in" required minlength="2" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="text">
+        </label>
+        <label class="block">
+          <span class="text-sm font-bold text-stone-700">LinkedIn / Portfolio</span>
+          <input name="LinkedIn or Portfolio" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="url">
+        </label>
+        <label class="block">
+          <span class="text-sm font-bold text-stone-700">Upload resume</span>
+          <input name="Resume" required accept=".pdf,.doc,.docx" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]" type="file">
+        </label>
+        <label class="block">
+          <span class="text-sm font-bold text-stone-700">Why DeciOps?</span>
+          <textarea name="Why DeciOps" required minlength="20" rows="5" class="mt-2 w-full border border-stone-300 px-4 py-3 outline-none focus:border-[#c74d34]"></textarea>
+        </label>
+        <button type="submit" class="w-full bg-gradient-to-r from-[#a5351e] to-[#c74d34] px-6 py-4 text-base font-extrabold uppercase tracking-wide text-white hover:opacity-90">
+          Send Resume
+        </button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
