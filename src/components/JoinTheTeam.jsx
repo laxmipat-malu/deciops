@@ -37,16 +37,12 @@ export default function JoinTheTeam() {
             };
 
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzyd92F50ge6heVT2jvz5ggv_mALpRutjo1LKUsSVPCRM37fvtbxyOQJ2_xNBoXbz7Ojg/exec', {
+                await fetch('https://script.google.com/macros/s/AKfycbzyd92F50ge6heVT2jvz5ggv_mALpRutjo1LKUsSVPCRM37fvtbxyOQJ2_xNBoXbz7Ojg/exec', {
                     method: 'POST',
-                    MODE: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    mode: 'no-cors',
                     body: JSON.stringify(data),
                 });
-                const result = await response.text();
-                alert(result);
+                alert('Resume submitted. We will be in touch.');
             } catch (error) {
                 console.error('Upload failed', error);
                 alert('Upload failed');
