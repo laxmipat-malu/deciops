@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import PageFrame from './components/PageFrame';
+import JoinTheTeam from './components/JoinTheTeam';
 
 const pages = [
   { path: '/', file: 'platform.html', title: 'Home' },
@@ -26,7 +27,6 @@ const pages = [
   },
   { path: '/about', file: 'about.html', title: 'About' },
   { path: '/request-demo', file: 'request-demo.html', title: 'Request for Demo' },
-  { path: '/join-the-team', file: 'join-the-team.html', title: 'Join the Team' },
   { path: '/terms', file: 'terms.html', title: 'Terms of Use' },
   { path: '/privacy', file: 'privacy.html', title: 'Privacy Policy' },
   { path: '/cookies', file: 'cookies.html', title: 'Cookies Policy' },
@@ -37,6 +37,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
+          <Route path="/join-the-team" element={<JoinTheTeam />} />
           {pages.map((p) => (
             <Route
               key={p.path}
