@@ -46,9 +46,16 @@ export default function Footer() {
             </Link>
             <address className="mt-5 not-italic text-base font-semibold leading-7 text-stone-600">
               <strong className="block text-lg font-extrabold text-stone-950">Inferonix Systems Private Ltd</strong>
-              Proworks, Om chambers<br />
-              Indiranagar,<br />
-              Bangalore 560038<br />
+              <a
+                href="https://maps.app.goo.gl/7QihwsSSd7gdpdfQ7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block transition-colors hover:text-stone-950"
+              >
+                HustleHub Tech Park, H1703, 2nd Floor,<br />
+                17th Cross Rd, Sector 4, HSR Layout,<br />
+                Bengaluru, Karnataka 560102
+              </a>
               <a href="mailto:info@deciops.ai" className="transition-colors hover:text-stone-950">
                 Email: info@deciops.ai
               </a>
